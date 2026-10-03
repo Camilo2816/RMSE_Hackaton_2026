@@ -1,0 +1,910 @@
+# Derecho constitucional
+# Banco completo: 134 ítems (39 cerradas, 86 semiabiertas, 9 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: constitucional
+documentos:
+  - doc_id: "sentencia_t_323_2024"
+    nombre_citable: "Sentencia T-323 de 2024"
+    tipo: "sentencia"
+    numero: "T-323"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-323%20de%202024"
+    url: ""
+    items_del_banco: 4
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-323", "2024"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 4 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_127_2011"
+    nombre_citable: "Sentencia C-127 de 2011"
+    tipo: "sentencia"
+    numero: "C-127"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-127%20de%202011"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-127", "2011"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_582_1999"
+    nombre_citable: "Sentencia C-582 de 1999"
+    tipo: "sentencia"
+    numero: "C-582"
+    anio: "1999"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-582%20de%201999"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-582", "1999"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_94_2021"
+    nombre_citable: "Sentencia C-94 de 2021"
+    tipo: "sentencia"
+    numero: "C-94"
+    anio: "2021"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-94%20de%202021"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-94", "2021"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "acuerdo_02_2015"
+    nombre_citable: "Acuerdo 02 de 2015"
+    tipo: "acuerdo"
+    numero: "02"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional (Sala Plena)"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Acuerdo%2002%20de%202015"
+    url: "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=154021"
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["acuerdo", "02", "2015"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. La URL es una página HTML del SISJUR sin parser: el texto se toma de la exportación a PDF de esa página entregada por el equipo."
+  - doc_id: "decreto_2067_1991"
+    nombre_citable: "Decreto 2067 de 1991"
+    tipo: "decreto"
+    numero: "2067"
+    anio: "1991"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%202067%20de%201991"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["decreto", "2067", "1991"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 352)."
+  - doc_id: "ley_11500_2007"
+    nombre_citable: "Ley 11500 de 2007"
+    tipo: "ley"
+    numero: "11500"
+    anio: "2007"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%2011500%20de%202007"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["ley", "11500", "2007"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. Probable error de digitación de la Ley 1150 de 2007 (ya en el seed); no buscar aparte."
+  - doc_id: "ley_1909_2018"
+    nombre_citable: "Ley 1909 de 2018"
+    tipo: "ley"
+    numero: "1909"
+    anio: "2018"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201909%20de%202018"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["ley", "1909", "2018"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_23_1961"
+    nombre_citable: "Ley 23 de 1961"
+    tipo: "ley"
+    numero: "23"
+    anio: "1961"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%2023%20de%201961"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["ley", "23", "1961"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. Referencia por verificar: no se identifica una Ley 23 de 1961 relacionada con el banco."
+  - doc_id: "sentencia_c_106_2018"
+    nombre_citable: "Sentencia C-106 de 2018"
+    tipo: "sentencia"
+    numero: "C-106"
+    anio: "2018"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-106%20de%202018"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-106", "2018"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_145_2020"
+    nombre_citable: "Sentencia C-145 de 2020"
+    tipo: "sentencia"
+    numero: "C-145"
+    anio: "2020"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-145%20de%202020"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-145", "2020"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_149_1993"
+    nombre_citable: "Sentencia C-149 de 1993"
+    tipo: "sentencia"
+    numero: "C-149"
+    anio: "1993"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-149%20de%201993"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-149", "1993"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_225_1995"
+    nombre_citable: "Sentencia C-225 de 1995"
+    tipo: "sentencia"
+    numero: "C-225"
+    anio: "1995"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-225%20de%201995"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-225", "1995"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_22_1996"
+    nombre_citable: "Sentencia C-22 de 1996"
+    tipo: "sentencia"
+    numero: "C-22"
+    anio: "1996"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-22%20de%201996"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-22", "1996"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_233_2021"
+    nombre_citable: "Sentencia C-233 de 2021"
+    tipo: "sentencia"
+    numero: "C-233"
+    anio: "2021"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-233%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-233", "2021"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_239_1997"
+    nombre_citable: "Sentencia C-239 de 1997"
+    tipo: "sentencia"
+    numero: "C-239"
+    anio: "1997"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-239%20de%201997"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-239", "1997"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_332_2025"
+    nombre_citable: "Sentencia C-332 de 2025"
+    tipo: "sentencia"
+    numero: "C-332"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-332%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-332", "2025"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 453)."
+  - doc_id: "sentencia_c_459_2023"
+    nombre_citable: "Sentencia C-459 de 2023"
+    tipo: "sentencia"
+    numero: "C-459"
+    anio: "2023"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-459%20de%202023"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-459", "2023"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_700_1999"
+    nombre_citable: "Sentencia C-700 de 1999"
+    tipo: "sentencia"
+    numero: "C-700"
+    anio: "1999"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-700%20de%201999"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-700", "1999"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_1001_2001"
+    nombre_citable: "Sentencia T-1001 de 2001"
+    tipo: "sentencia"
+    numero: "T-1001"
+    anio: "2001"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-1001%20de%202001"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-1001", "2001"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_230_2023"
+    nombre_citable: "Sentencia T-230 de 2023"
+    tipo: "sentencia"
+    numero: "T-230"
+    anio: "2023"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-230%20de%202023"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-230", "2023"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_262_2025"
+    nombre_citable: "Sentencia T-262 de 2025"
+    tipo: "sentencia"
+    numero: "T-262"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-262%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-262", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_325_2025"
+    nombre_citable: "Sentencia T-325 de 2025"
+    tipo: "sentencia"
+    numero: "T-325"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-325%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-325", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_429_2011"
+    nombre_citable: "Sentencia T-429 de 2011"
+    tipo: "sentencia"
+    numero: "T-429"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-429%20de%202011"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-429", "2011"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_445_2024"
+    nombre_citable: "Sentencia T-445 de 2024"
+    tipo: "sentencia"
+    numero: "T-445"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-445%20de%202024"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-445", "2024"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_67_2025"
+    nombre_citable: "Sentencia T-67 de 2025"
+    tipo: "sentencia"
+    numero: "T-67"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-67%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-67", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_925_2014"
+    nombre_citable: "Sentencia T-925 de 2014"
+    tipo: "sentencia"
+    numero: "T-925"
+    anio: "2014"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-925%20de%202014"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-925", "2014"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_970_2014"
+    nombre_citable: "Sentencia T-970 de 2014"
+    tipo: "sentencia"
+    numero: "T-970"
+    anio: "2014"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-970%20de%202014"
+    url: ""
+    items_del_banco: 1
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-970", "2014"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_468_2024"
+    nombre_citable: "Sentencia C-468 de 2024"
+    tipo: "sentencia"
+    numero: "C-468"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-468%20de%202024"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-468", "2024"]
+    origen: "sample_50.legal_basis"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en legal_basis de muestra (id 453)."
+  - doc_id: "sentencia_su_16_2020"
+    nombre_citable: "Sentencia SU-16 de 2020"
+    tipo: "sentencia"
+    numero: "SU-16"
+    anio: "2020"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-16%20de%202020"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "SU-16", "2020"]
+    origen: "sample_50.legal_basis"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en legal_basis de muestra (id 453, como SU-016 de 2020)."
+  - doc_id: "decreto_2591_1991"
+    nombre_citable: "Decreto 2591 de 1991"
+    tipo: "decreto"
+    numero: "2591"
+    anio: "1991"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/decreto_2591_1991.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["decreto", "2591", "1991"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Norma base de la tutela: juez competente, requisitos, términos y efectos; sustento de la mayoría de sentencias T y SU del banco."
+  - doc_id: "sentencia_t_256_2025"
+    nombre_citable: "Sentencia T-256 de 2025"
+    tipo: "sentencia"
+    numero: "T-256"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-256%20de%202025"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-256", "2025"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Muestra id 190 (la pregunta la nombra; el legal_basis omite el año). Sub-tarea antecedentes fácticos."
+    nota_verificacion: "Verificada 2026-10-01: la pregunta 190 dice 'T-256 de 2025'; datos.gov.co v2k4-2t8s la registra (12-06-2025, ponente Natalia Ángel Cabo)."
+  - doc_id: "decreto_333_2021"
+    nombre_citable: "Decreto 333 de 2021"
+    tipo: "decreto"
+    numero: "333"
+    anio: "2021"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20333%20de%202021"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=161266"
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["decreto", "333", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Juez que decide: reparto de tutelas por tipo de accionado."
+  - doc_id: "ley_134_1994"
+    nombre_citable: "Ley 134 de 1994"
+    tipo: "ley"
+    numero: "134"
+    anio: "1994"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0134_1994.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "134", "1994"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Referendo, consulta, revocatoria; existencia normativa y requisitos."
+  - doc_id: "ley_1712_2014"
+    nombre_citable: "Ley 1712 de 2014"
+    tipo: "ley"
+    numero: "1712"
+    anio: "2014"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "1712", "2014"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Derecho de acceso a información; también administrativo."
+  - doc_id: "ley_1751_2015"
+    nombre_citable: "Ley 1751 de 2015"
+    tipo: "ley"
+    numero: "1751"
+    anio: "2015"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "1751", "2015"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa la T-760 de 2008 (en el seed); tutela en salud."
+  - doc_id: "ley_1757_2015"
+    nombre_citable: "Ley 1757 de 2015"
+    tipo: "ley"
+    numero: "1757"
+    anio: "2015"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1757_2015.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "1757", "2015"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Mecanismos de participación ciudadana; complementa la Ley 134 de 1994."
+  - doc_id: "ley_393_1997"
+    nombre_citable: "Ley 393 de 1997"
+    tipo: "ley"
+    numero: "393"
+    anio: "1997"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0393_1997.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "393", "1997"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Mecanismo constitucional (art. 87 CP); existencia normativa y requisitos."
+  - doc_id: "ley_5_1992"
+    nombre_citable: "Ley 5 de 1992"
+    tipo: "ley"
+    numero: "5"
+    anio: "1992"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0005_1992.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "5", "1992"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Trámite legislativo y vicios de procedimiento (p. ej., control de la reforma pensional)."
+  - doc_id: "sentencia_c_93_2001"
+    nombre_citable: "Sentencia C-093 de 2001"
+    tipo: "sentencia"
+    numero: "C-93"
+    anio: "2001"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-093%20de%202001"
+    url: "https://www.corteconstitucional.gov.co/relatoria/2001/c-093-01.htm"
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-93", "2001"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Test de igualdad; ponderación."
+    nota_verificacion: "Confirmada por el equipo: juicio integrado de igualdad, edad para adoptar."
+  - doc_id: "sentencia_c_141_2010"
+    nombre_citable: "Sentencia C-141 de 2010"
+    tipo: "sentencia"
+    numero: "C-141"
+    anio: "2010"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-141%20de%202010"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-141", "2010"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Juicio de sustitución; conflicto normativo."
+  - doc_id: "sentencia_c_551_2003"
+    nombre_citable: "Sentencia C-551 de 2003"
+    tipo: "sentencia"
+    numero: "C-551"
+    anio: "2003"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-551%20de%202003"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-551", "2003"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Juicio de sustitución de la Constitución."
+  - doc_id: "sentencia_c_836_2001"
+    nombre_citable: "Sentencia C-836 de 2001"
+    tipo: "sentencia"
+    numero: "C-836"
+    anio: "2001"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-836%20de%202001"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "C-836", "2001"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Sub-tarea precedente jurisprudencial."
+  - doc_id: "sentencia_su_47_1999"
+    nombre_citable: "Sentencia SU-047 de 1999"
+    tipo: "sentencia"
+    numero: "SU-47"
+    anio: "1999"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-047%20de%201999"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "SU-47", "1999"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Sub-tarea precedente jurisprudencial."
+  - doc_id: "sentencia_t_25_2004"
+    nombre_citable: "Sentencia T-025 de 2004"
+    tipo: "sentencia"
+    numero: "T-25"
+    anio: "2004"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-025%20de%202004"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-25", "2004"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Hito; figura del estado de cosas inconstitucional."
+  - doc_id: "sentencia_t_406_1992"
+    nombre_citable: "Sentencia T-406 de 1992"
+    tipo: "sentencia"
+    numero: "T-406"
+    anio: "1992"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-406%20de%201992"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-406", "1992"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Hito fundacional; interpretación sistemática y ponderación."
+  - doc_id: "sentencia_t_881_2002"
+    nombre_citable: "Sentencia T-881 de 2002"
+    tipo: "sentencia"
+    numero: "T-881"
+    anio: "2002"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-881%20de%202002"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["jurisprudencia", "T-881", "2002"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ponderación de principios y derechos."
+  - doc_id: "decreto_306_1992"
+    nombre_citable: "Decreto 306 de 1992"
+    tipo: "decreto"
+    numero: "306"
+    anio: "1992"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20306%20de%201992"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=6061"
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["decreto", "306", "1992"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reglamentación de la tutela."
+  - doc_id: "ley_1448_2011"
+    nombre_citable: "Ley 1448 de 2011"
+    tipo: "ley"
+    numero: "1448"
+    anio: "2011"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1680697"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-1448-2011.md"
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "1448", "2011"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Víctimas del conflicto armado y restitución de tierras. No está en el corpus; texto consolidado de SUIN vía legalize-co (auditoría de cobertura 2026-10-01)."
+  - doc_id: "ley_1618_2013"
+    nombre_citable: "Ley 1618 de 2013"
+    tipo: "ley"
+    numero: "1618"
+    anio: "2013"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1685302"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-1618-2013.md"
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "1618", "2013"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ley estatutaria de los derechos de las personas con discapacidad. No está en el corpus; texto consolidado de SUIN vía legalize-co (auditoría de cobertura 2026-10-01)."
+  - doc_id: "sentencia_c_274_2013"
+    nombre_citable: "Sentencia C-274 de 2013"
+    tipo: "sentencia"
+    numero: "C-274"
+    anio: "2013"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/2013/C-274-13.htm"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional", "mercados"]
+    canonico: ["jurisprudencia", "C-274", "2013"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Control previo de la ley estatutaria de transparencia y acceso a la información (Ley 1712 de 2014). El Senado la pega en el art. 33 de la Ley 1712: se ingiere aparte para separarla."
+  - doc_id: "ley_2274_2022"
+    nombre_citable: "Ley 2274 de 2022"
+    tipo: "ley"
+    numero: "2274"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2274_2022.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["ley", "2274", "2022"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Nombrada en el conjunto de evaluación (1 pregunta) y ausente del corpus."
+  - doc_id: "decreto_1382_2000"
+    nombre_citable: "Decreto 1382 de 2000"
+    tipo: "decreto"
+    numero: "1382"
+    anio: "2000"
+    organo_emisor: "Presidencia de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1276834"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/DECRETO-1382-2000.md"
+    items_del_banco: null
+    areas: ["constitucional"]
+    canonico: ["decreto", "1382", "2000"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reglas de reparto de la acción de tutela. Nombrado en el conjunto de evaluación (1 pregunta); texto consolidado de SUIN vía legalize-co."

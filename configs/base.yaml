@@ -1,0 +1,143 @@
+# Valores compartidos por todos los pipelines. configs/<pipeline>.yaml los
+# sobrescribe con merge profundo (src/common/config.py).
+seed: 42
+
+retrieval:
+  encoder: BAAI/bge-m3          # alternativa: intfloat/multilingual-e5-large (exige "query: " / "passage: ")
+  max_seq_length: 1024          # el fragmento más largo tiene ~2.600 caracteres (< 1.024 tokens)
+  bm25:
+    stemmer: spanish            # bm25s + Snowball; tokenización en src/index/tokenizar.py
+    method: lucene
+    k1: 1.5
+    b: 0.75
+  hybrid: rrf                   # fusión denso + BM25
+  rrf_k: 60
+  top_k_per_query: 50           # candidatos por recuperador y consulta, antes del rerank
+  denso_relatoria_secciones: []   # secciones de la relatoría cosechada (relatoria_inventario) que entran al denso;
+                                # null = todas, [] = ninguna. "Opción C" ([] + bm25_relatoria false): la relatoría
+                                # solo entra por número (lookup). sample_50: 52,40 (todo) → 56,88 (A20 + B4 [ficha,
+                                # sintesis, descriptores, decision]) → 58,81 (C; media de 4 juicios 58,62), igual a
+                                # la entrega con el corpus de 487 docs (59,22); sentencias nombradas 60/60 (eval/barrido_topes.py)
+  bm25_relatoria: false         # false: la relatoría cosechada sale del BM25 del híbrido (lookup no usa estas máscaras,
+                                # src/retrieval/relatoria.py)
+  relatoria_inventario: sources/relatoria_cc.yaml
+  solo_lookup: [resolucion_368_2014, compilacion_csj_contratos_civiles_comerciales_3]
+                                # fuera del híbrido; solo entran nombradas (lookup: ficha + fragmento más afín).
+                                # Resolución 368: en el híbrido ocupaba los 10 pasajes de su bloque y desplazaba el
+                                # CPACA de referencia (sample_50 748: misma letra, cita perdida; 43,67 → 43,26).
+                                # Compilación de la CSJ (1.241 reseñas): en el híbrido cambió 7 de 35 respuestas
+                                # de texto libre; RAGAS 13,91 / 14,92 (media 14,42) frente a 15,06 / 15,33 (15,20) sin ella
+
+rerank:
+  enabled: true
+  model: BAAI/bge-reranker-v2-m3
+  candidates: 40                # candidatos del cross-encoder; con cuotas se preseleccionan con tope de un híbrido de 3×.
+                                # sample_50 con CE + CBJ: 20 → body 0,976 / art. 0,526; 40 → 0,976 / 0,579 (51 recupera
+                                # la Ley 472) y ninguna regresión frente al corpus sin CE ni CBJ. Rerank p95 0,28 → 0,49 s
+  max_length: 512               # tokens por par (consulta, pasaje); el encabezado va al inicio
+  batch_size: 8
+  top_n: 10
+  fusionar_con_hibrido: false   # true: lista de la pregunta = RRF(orden del híbrido, orden del reranker), con el score del reranker.
+                                # Techo 0,898 → 0,939 (128 y 1073), pero la corrida completa bajó 41,88 → 39,66 deterministas
+                                # (748 cambia de letra; citas sin cambio): eval/runs/2026-10-01_fase3c_fusion_hibrido. Apagado
+
+fusion:
+  method: rrf                   # fusión entre subconsultas; el lookup va primero
+  max_passages: 10              # el evaluador solo mira 10; el LLM ve exactamente estos
+  max_por_documento: null       # tope tras el rerank. Con 2 (y candidates 50): body-hit 0,927 → 0,951, docs/ítem 4,5 → 6,6,
+                                # pero la corrida completa bajó 54,12 → 53,22 (eval/runs/2026-09-30_fase2_diversidad): apagado
+  factor_vigencia:              # score × factor para ordenar tras el rerank (no filtra: a veces la clave es la norma derogada)
+    derogado: 0.85              # 2.379 fragmentos (Ley 1151 de 2007, Ley 640 de 2001…)
+    inexequible: 0.85           # 486 (la Ley 1943 de 2018 entera, que repite texto de la Ley 2010 de 2019)
+
+lookup:
+  enabled: true                 # norma/artículo nombrados en la pregunta, sin LLM
+  max_hits: 4                   # tope de pasajes del lookup (van primero en los 10)
+  partes_por_articulo: 2        # un artículo largo no ocupa todo el cupo
+  por_norma: 2                  # norma nombrada sin artículo: ficha + mejores BM25 del documento
+  bm25_solo_pregunta: false     # true: ese BM25 usa la pregunta sin las opciones (art. 626 del CGP en 58); sin medir aislado
+
+cuotas:                         # src/retrieval/cuotas.py: tope por tipo de documento en los 10 pasajes
+  enabled: true                 # sin tope, sentencias (48 % del corpus), DUR y circulares desplazan la norma primaria.
+                                # sample_50 (CE + CBJ): body-hit 0,927 → 0,976, recall 0,898 → 0,939, art. 0,474 → 0,579
+  sentencia: 3                  # CC, CSJ, CE (secciones que no son votos)
+  sentencia_si_pregunta: 6      # la pregunta pide jurisprudencia/precedente/sentencia/fallo
+  voto: 0                       # salvamentos y aclaraciones de voto
+  voto_si_pregunta: 2
+  reglamentaria: 2              # DUR y circulares
+  reglamentaria_si_pregunta: 5  # la pregunta nombra circular, DUR, reglamento o superintendencia
+  min_primarias: 0              # > 0: búsqueda aparte en normas primarias que garantiza ese mínimo entre los candidatos
+                                # del reranker. Con la relatoría en el híbrido, 20 sube el techo body-hit 0,854 → 0,976;
+                                # con la opción C no aporta (C + A20 58,43 frente a C 58,81): apagado
+  reglamentarias: [decreto_2555_2010, decreto_1625_2016, decreto_780_2016, decreto_1074_2015,
+                   decreto_1072_2015, decreto_1082_2015, decreto_1083_2015, decreto_1833_2016]
+                                # los documentos que la pregunta nombra no cuentan para el tope
+
+jurisprudencia:                 # src/retrieval/jurisprudencia.py: la pregunta pide jurisprudencia sin nombrar
+  enabled: false                # sentencia → relatoría por BM25, preferidas las que citan sus normas núcleo
+  candidatos: 10                # sentencias (un fragmento c/u) que entran como candidatos del reranker
+  bm25_k: 300                   # fragmentos de la relatoría que se consideran
+  nucleo: 10                    # normas primarias entre los primeros candidatos del híbrido que definen el núcleo
+
+compresion:                     # src/generation/compresion.py: el LLM ve de cada sentencia larga su encabezado
+  enabled: false                # y las oraciones más relevantes (MMR); la entrega lleva el pasaje completo
+  presupuesto: 0.4              # fracción de caracteres de cada pasaje de sentencia (HCLeK: 0,2-0,5; fijado a priori)
+  min_caracteres: 600           # pasajes más cortos van completos
+  lambda: 0.8                   # peso de la relevancia frente a la diversidad (el del artículo)
+
+valores:                        # src/retrieval/valores.py: artículo que fija la cifra de 2026, sin LLM
+  enabled: true                 # ocupa el último de los 10 lugares (si no estaba ya entre ellos)
+  max: 2
+  reglas:                       # patrón sobre la consulta en minúsculas y sin tildes
+    - nombre: smlmv             # cuantías del CGP, topes y sanciones en smlmv; montos en pesos (ítem 528)
+      patron: 'salarios? minimos?|\bs\.?m\.?m?\.?l\.?m\.?v\b|\bcuantia|\$ ?\d|\b\d{1,3}(?:\.\d{3}){2,}\b|\b\d+ ?millones\b|\bcop\b'
+      pasajes: [{doc_id: decreto_159_2026, articulo: "1"}]
+    - nombre: uvt
+      patron: '\buvt\b|unidad(?:es)? de valor tributario'
+      pasajes: [{doc_id: resolucion_238_2025, articulo: "1"}]
+    - nombre: auxilio_transporte
+      patron: '(?:auxilio|subsidio) de transporte'
+      pasajes: [{doc_id: decreto_1470_2025, articulo: "1"}]
+
+generation:
+  model: meta-llama/Llama-3.1-8B-Instruct   # benchmark 2026-10-01 (eval/benchmark_decoders): 59,03 vs Qwen/Qwen3-8B 54,80
+  quantization: q4_k_m          
+  temperature: 0                # obligatorio (enunciado 3.1)
+  thinking: false               # enable_thinking de Qwen3 (Llama no razona; sin efecto)
+  guided_json: true             # salida restringida al JSON del formato
+  estructura: null              # "partes": guided JSON impone la extensión del enunciado (semiabiertas: tres
+                                # oraciones con papel fijo; análisis: exactamente cinco), que Llama no cumple por
+                                # instrucción (sample_50: 20/30 semiabiertas y 5/5 análisis por debajo del mínimo).
+                                # "partes_razonadas": además, un "razonamiento" previo que no se entrega
+  num_ctx: 16384                # prompts reales 3.400–5.500 tokens (peor caso ~9.000 + salida); el defecto de Ollama (4096) recorta el inicio
+  num_predict:                  # tope de salida por formato (tools/medir_llm.py y gen_tokens de las corridas)
+    multiple_choice: 450         # justificación + 3 descartes: hasta ~300 medidos
+    semi_open: 400
+    open_ended: 900
+  reintento_factor_num_predict: 1.5   # si la salida sale truncada, el único reintento amplía el tope
+  repeat_penalty: null          # sin penalización: la 253 ya no degenera con num_ctx correcto
+  reset_cache: true             # vacía la caché KV antes de cada llamada: salida idéntica sin importar el historial
+  timeout_s: 30                 # por intento; ~900 tokens a ~125 tok/s son ~7 s
+  timeout_carga_s: 600          # carga en frío (34-60 s con num_ctx 16384), aparte: antes vencía timeout_s y la
+                                # pregunta salía con respaldo (src/generation/llm.py, asegurar_cargado)
+  keep_alive: 30m               # el modelo queda cargado entre preguntas
+
+verification:
+  drop_unsupported: true        # elimina citas ausentes de los 10 pasajes
+  extension:                    # src/generation/extension.py: extensión mínima del enunciado (semiabiertas 3
+    enabled: false              # oraciones, análisis 5) con oraciones literales de los pasajes, sin LLM. Apagada el
+    min_palabras_oracion: 5     # 2026-10-03: el jurado aclaró que solo rige el máximo de palabras (semiabiertas 150,
+    max_palabras_oracion: 60    # abiertas 500; lo que pase se corta). Con ella: 50/50 cumplen el mínimo, RAGAS 14,95 → 13,66
+  referencia_desde_pasajes:     # normas de los 10 pasajes que se suman al fundamento de la respuesta
+    # fuentes: normas de las que son los pasajes · menciones: citadas en su texto, por frecuencia
+    # fuentes 10 = todas las de los 10 pasajes; con 5 la 748 dejaba fuera el CPACA (corpus de 487 docs: +0,41;
+    # corpus completo con A20+B4, simulado sobre la corrida guardada: citas 17,96 → 18,37)
+    semi_open: {fuentes: 10, menciones: 4}        # referencia_legal (no entra a RAGAS)
+    multiple_choice: {fuentes: 10, menciones: 4}  # justificacion, "Fundamento normativo: …" (sin RAGAS)
+    open_ended: {fuentes: 0, menciones: 0}       # marco_normativo entra a RAGAS; sin ganancia medida en sample
+
+abstention:
+  closed: never                 # multiple_choice nunca se abstiene
+  free_text_min_rerank_score: null   # umbral por calibrar sobre sample_50
+
+# Alias de normas: configs/alias_normas.yaml. Presupuesto: ≤ 10 s por pregunta.

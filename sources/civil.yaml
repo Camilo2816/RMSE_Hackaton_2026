@@ -1,0 +1,484 @@
+# Derecho civil
+# Banco completo: 102 ítems (27 cerradas, 70 semiabiertas, 5 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: civil
+documentos:
+  - doc_id: "ley_2220_2022"
+    nombre_citable: "Ley 2220 de 2022"
+    tipo: "ley"
+    numero: "2220"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202220%20de%202022"
+    url: ""
+    items_del_banco: 11
+    areas: ["civil", "procesal"]
+    canonico: ["ley", "2220", "2022"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citada en 11 ítem(s) del banco según el seed."
+  - doc_id: "ley_2437_2024"
+    nombre_citable: "Ley 2437 de 2024"
+    tipo: "ley"
+    numero: "2437"
+    anio: "2024"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202437%20de%202024"
+    url: ""
+    items_del_banco: 3
+    areas: ["civil", "procesal"]
+    canonico: ["ley", "2437", "2024"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_315_2025"
+    nombre_citable: "Sentencia SU-315 de 2025"
+    tipo: "sentencia"
+    numero: "SU-315"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-315%20de%202025"
+    url: ""
+    items_del_banco: 3
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-315", "2025"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "decreto_960_1970"
+    nombre_citable: "Decreto 960 de 1970"
+    tipo: "decreto"
+    numero: "960"
+    anio: "1970"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20960%20de%201970"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["decreto", "960", "1970"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_160_1994"
+    nombre_citable: "Ley 160 de 1994"
+    tipo: "ley"
+    numero: "160"
+    anio: "1994"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20160%20de%201994"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["ley", "160", "1994"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_2251_2022"
+    nombre_citable: "Ley 2251 de 2022"
+    tipo: "ley"
+    numero: "2251"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202251%20de%202022"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["ley", "2251", "2022"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_769_2002"
+    nombre_citable: "Ley 769 de 2002"
+    tipo: "ley"
+    numero: "769"
+    anio: "2002"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20769%20de%202002"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["ley", "769", "2002"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_183_2025"
+    nombre_citable: "Sentencia C-183 de 2025"
+    tipo: "sentencia"
+    numero: "C-183"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-183%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "C-183", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_345_2017"
+    nombre_citable: "Sentencia C-345 de 2017"
+    tipo: "sentencia"
+    numero: "C-345"
+    anio: "2017"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-345%20de%202017"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "C-345", "2017"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_sc_1121_2018"
+    nombre_citable: "Sentencia SC-1121 de 2018"
+    tipo: "sentencia"
+    numero: "SC-1121"
+    anio: "2018"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Civil"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SC-1121%20de%202018"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SC-1121", "2018"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_su_138_2024"
+    nombre_citable: "Sentencia SU-138 de 2024"
+    tipo: "sentencia"
+    numero: "SU-138"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-138%20de%202024"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-138", "2024"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_207_2022"
+    nombre_citable: "Sentencia SU-207 de 2022"
+    tipo: "sentencia"
+    numero: "SU-207"
+    anio: "2022"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-207%20de%202022"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-207", "2022"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_380_2021"
+    nombre_citable: "Sentencia SU-380 de 2021"
+    tipo: "sentencia"
+    numero: "SU-380"
+    anio: "2021"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-380%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-380", "2021"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_425_2025"
+    nombre_citable: "Sentencia SU-425 de 2025"
+    tipo: "sentencia"
+    numero: "SU-425"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-425%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-425", "2025"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_431_2015"
+    nombre_citable: "Sentencia SU-431 de 2015"
+    tipo: "sentencia"
+    numero: "SU-431"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-431%20de%202015"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-431", "2015"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_455_2020"
+    nombre_citable: "Sentencia SU-455 de 2020"
+    tipo: "sentencia"
+    numero: "SU-455"
+    anio: "2020"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-455%20de%202020"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-455", "2020"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 919)."
+  - doc_id: "sentencia_su_500_2015"
+    nombre_citable: "Sentencia SU-500 de 2015"
+    tipo: "sentencia"
+    numero: "SU-500"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-500%20de%202015"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "SU-500", "2015"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_26_2025"
+    nombre_citable: "Sentencia T-26 de 2025"
+    tipo: "sentencia"
+    numero: "T-26"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-26%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "T-26", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_4_2026"
+    nombre_citable: "Sentencia T-4 de 2026"
+    tipo: "sentencia"
+    numero: "T-4"
+    anio: "2026"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-4%20de%202026"
+    url: ""
+    items_del_banco: 1
+    areas: ["civil"]
+    canonico: ["jurisprudencia", "T-4", "2026"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "codigo_civil"
+    nombre_citable: "Código Civil"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/"
+    url: ""
+    items_del_banco: null
+    areas: ["civil"]
+    canonico: ["codigo_civil", null, null]
+    origen: "citations.CODES"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citado en legal_basis de muestra (id 358, art. 946). Obligaciones, contratos, bienes, sucesiones; muestra 24 (elementos del contrato)."
+  - doc_id: "sentencia_csj_civil_2017_07_18_por_verificar"
+    nombre_citable: "Sentencia de la Sala Civil de la Corte Suprema del 18 de julio de 2017"
+    tipo: "sentencia"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://cortesuprema.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["civil"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en legal_basis de muestra (id 168) sin número de radicado."
+  - doc_id: "ley_1676_2013"
+    nombre_citable: "Ley 1676 de 2013"
+    tipo: "ley"
+    numero: "1676"
+    anio: "2013"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1676_2013.html"
+    url: ""
+    items_del_banco: null
+    areas: ["civil", "comercial"]
+    canonico: ["ley", "1676", "2013"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Garantías mobiliarias; contexto de la C-145 de 2018 (en el seed, muestra 140)."
+  - doc_id: "ley_675_2001"
+    nombre_citable: "Ley 675 de 2001"
+    tipo: "ley"
+    numero: "675"
+    anio: "2001"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0675_2001.html"
+    url: ""
+    items_del_banco: null
+    areas: ["civil"]
+    canonico: ["ley", "675", "2001"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Bienes y propiedad; definiciones y requisitos."
+  - doc_id: "ley_791_2002"
+    nombre_citable: "Ley 791 de 2002"
+    tipo: "ley"
+    numero: "791"
+    anio: "2002"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0791_2002.html"
+    url: ""
+    items_del_banco: null
+    areas: ["civil"]
+    canonico: ["ley", "791", "2002"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Prescripción adquisitiva y extintiva; vigencia temporal."
+  - doc_id: "ley_1561_2012"
+    nombre_citable: "Ley 1561 de 2012"
+    tipo: "ley"
+    numero: "1561"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1561_2012.html"
+    url: ""
+    items_del_banco: null
+    areas: ["civil"]
+    canonico: ["ley", "1561", "2012"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Proceso verbal especial de titulación."
+  - doc_id: "ley_1579_2012"
+    nombre_citable: "Ley 1579 de 2012"
+    tipo: "ley"
+    numero: "1579"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1579_2012.html"
+    url: ""
+    items_del_banco: null
+    areas: ["civil"]
+    canonico: ["ley", "1579", "2012"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Tradición de inmuebles."
+  - doc_id: "ley_1774_2016"
+    nombre_citable: "Ley 1774 de 2016"
+    tipo: "ley"
+    numero: "1774"
+    anio: "2016"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1774_2016.html"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1774_2016.html"
+    items_del_banco: null
+    areas: ["civil", "penal"]
+    canonico: ["ley", "1774", "2016"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Animales como seres sintientes; maltrato animal (modifica Código Civil, Ley 84 de 1989 y Código Penal)."
+  - doc_id: "compilacion_csj_contratos_civiles_comerciales_3"
+    nombre_citable: "Contratos civiles y comerciales, tomo 3 (Relatoría de la Sala de Casación Civil de la Corte Suprema de Justicia)"
+    tipo: "sentencia"
+    numero: "3"
+    anio: null
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Civil"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://www.cortesuprema.gov.co/corte/wp-content/uploads/relatorias/ci/contratoscivilesycomerciales3.pdf"
+    url: "https://www.cortesuprema.gov.co/corte/wp-content/uploads/relatorias/ci/contratoscivilesycomerciales3.pdf"
+    parser: "relatoria_csj"
+    items_del_banco: null
+    areas: ["civil", "comercial"]
+    canonico: null
+    origen: "huecos_seed_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Compilación de reseñas de la Sala de Casación Civil; trae la SC1121-2018 y la SC3674-2021, citadas por el banco según el seed y ausentes del corpus. Cada reseña es una sección con el número de su providencia (citable)."

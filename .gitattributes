@@ -1,0 +1,7 @@
+# Archivos oficiales: byte a byte, sin conversión de fin de línea.
+data/** -text
+schema/** -text
+scripts/** -text
+docs/kit/** -text
+# Scripts de shell siempre con LF.
+*.sh text eol=lf

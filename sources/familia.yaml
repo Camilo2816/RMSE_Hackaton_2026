@@ -1,0 +1,739 @@
+# Derecho de familia
+# Banco completo: 93 ítems (32 cerradas, 59 semiabiertas, 2 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: familia
+documentos:
+  - doc_id: "codigo_infancia"
+    nombre_citable: "Código de la Infancia y la Adolescencia"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Codigo%20infancia"
+    url: ""
+    items_del_banco: 5
+    areas: ["familia"]
+    canonico: ["codigo_infancia", null, null]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Derechos de niños y adolescentes, restablecimiento de derechos, SRPA. Citada en 5 ítem(s) del banco según el seed."
+  - doc_id: "ley_54_1990"
+    nombre_citable: "Ley 54 de 1990"
+    tipo: "ley"
+    numero: "54"
+    anio: "1990"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%2054%20de%201990"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30896"
+    items_del_banco: 3
+    areas: ["familia"]
+    canonico: ["ley", "54", "1990"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "ley_979_2005"
+    nombre_citable: "Ley 979 de 2005"
+    tipo: "ley"
+    numero: "979"
+    anio: "2005"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20979%20de%202005"
+    url: ""
+    items_del_banco: 3
+    areas: ["familia"]
+    canonico: ["ley", "979", "2005"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_394_2017"
+    nombre_citable: "Sentencia C-394 de 2017"
+    tipo: "sentencia"
+    numero: "C-394"
+    anio: "2017"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-394%20de%202017"
+    url: ""
+    items_del_banco: 3
+    areas: ["constitucional", "familia"]
+    canonico: ["jurisprudencia", "C-394", "2017"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_134_2019"
+    nombre_citable: "Sentencia C-134 de 2019"
+    tipo: "sentencia"
+    numero: "C-134"
+    anio: "2019"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-134%20de%202019"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "familia"]
+    canonico: ["jurisprudencia", "C-134", "2019"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_507_2004"
+    nombre_citable: "Sentencia C-507 de 2004"
+    tipo: "sentencia"
+    numero: "C-507"
+    anio: "2004"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-507%20de%202004"
+    url: ""
+    items_del_banco: 2
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-507", "2004"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_746_2011"
+    nombre_citable: "Sentencia C-746 de 2011"
+    tipo: "sentencia"
+    numero: "C-746"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-746%20de%202011"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "familia"]
+    canonico: ["jurisprudencia", "C-746", "2011"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_96_2024"
+    nombre_citable: "Sentencia C-96 de 2024"
+    tipo: "sentencia"
+    numero: "C-96"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-96%20de%202024"
+    url: ""
+    items_del_banco: 2
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-96", "2024"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_214_2016"
+    nombre_citable: "Sentencia SU-214 de 2016"
+    tipo: "sentencia"
+    numero: "SU-214"
+    anio: "2016"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-214%20de%202016"
+    url: ""
+    items_del_banco: 2
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "SU-214", "2016"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "decreto_4436_2005"
+    nombre_citable: "Decreto 4436 de 2005"
+    tipo: "decreto"
+    numero: "4436"
+    anio: "2005"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%204436%20de%202005"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=18346"
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["decreto", "4436", "2005"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_29_1982"
+    nombre_citable: "Ley 29 de 1982"
+    tipo: "ley"
+    numero: "29"
+    anio: "1982"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%2029%20de%201982"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=256"
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["ley", "29", "1982"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_721_2001"
+    nombre_citable: "Ley 721 de 2001"
+    tipo: "ley"
+    numero: "721"
+    anio: "2001"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20721%20de%202001"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["ley", "721", "2001"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_75_1968"
+    nombre_citable: "Ley 75 de 1968"
+    tipo: "ley"
+    numero: "75"
+    anio: "1968"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%2075%20de%201968"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4828"
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["ley", "75", "1968"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_1033_2002"
+    nombre_citable: "Sentencia C-1033 de 2002"
+    tipo: "sentencia"
+    numero: "C-1033"
+    anio: "2002"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-1033%20de%202002"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-1033", "2002"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_131_2018"
+    nombre_citable: "Sentencia C-131 de 2018"
+    tipo: "sentencia"
+    numero: "C-131"
+    anio: "2018"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-131%20de%202018"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-131", "2018"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_39_2025"
+    nombre_citable: "Sentencia C-39 de 2025"
+    tipo: "sentencia"
+    numero: "C-39"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-39%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-39", "2025"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 946)."
+  - doc_id: "sentencia_c_4_1998"
+    nombre_citable: "Sentencia C-4 de 1998"
+    tipo: "sentencia"
+    numero: "C-4"
+    anio: "1998"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-4%20de%201998"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-4", "1998"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_533_2000"
+    nombre_citable: "Sentencia C-533 de 2000"
+    tipo: "sentencia"
+    numero: "C-533"
+    anio: "2000"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-533%20de%202000"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-533", "2000"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_683_2015"
+    nombre_citable: "Sentencia C-683 de 2015"
+    tipo: "sentencia"
+    numero: "C-683"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-683%20de%202015"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-683", "2015"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_964_2003"
+    nombre_citable: "Sentencia C-964 de 2003"
+    tipo: "sentencia"
+    numero: "C-964"
+    anio: "2003"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-964%20de%202003"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-964", "2003"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_985_2010"
+    nombre_citable: "Sentencia C-985 de 2010"
+    tipo: "sentencia"
+    numero: "C-985"
+    anio: "2010"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-985%20de%202010"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-985", "2010"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_sc_3085_2024"
+    nombre_citable: "Sentencia SC-3085 de 2024"
+    tipo: "sentencia"
+    numero: "SC-3085"
+    anio: "2024"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Civil"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://archivodigitalapi.cortesuprema.gov.co/share/2024/12/Sentencias/SC3085-2024.pdf"
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "SC-3085", "2024"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_t_1096_2008"
+    nombre_citable: "Sentencia T-1096 de 2008"
+    tipo: "sentencia"
+    numero: "T-1096"
+    anio: "2008"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-1096%20de%202008"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "T-1096", "2008"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_232_2025"
+    nombre_citable: "Sentencia T-232 de 2025"
+    tipo: "sentencia"
+    numero: "T-232"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-232%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "T-232", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_350_2025"
+    nombre_citable: "Sentencia T-350 de 2025"
+    tipo: "sentencia"
+    numero: "T-350"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-350%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "T-350", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_71_2016"
+    nombre_citable: "Sentencia T-71 de 2016"
+    tipo: "sentencia"
+    numero: "T-71"
+    anio: "2016"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-71%20de%202016"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "T-71", "2016"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_77_2025"
+    nombre_citable: "Sentencia T-77 de 2025"
+    tipo: "sentencia"
+    numero: "T-77"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-77%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "T-77", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1060_2006"
+    nombre_citable: "Ley 1060 de 2006"
+    tipo: "ley"
+    numero: "1060"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1060_2006.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "1060", "2006"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Filiación; complementa las Leyes 75 de 1968 y 721 de 2001 del seed."
+  - doc_id: "ley_1257_2008"
+    nombre_citable: "Ley 1257 de 2008"
+    tipo: "ley"
+    numero: "1257"
+    anio: "2008"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1257_2008.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia", "penal"]
+    canonico: ["ley", "1257", "2008"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Violencia contra la mujer; también familia."
+  - doc_id: "ley_1996_2019"
+    nombre_citable: "Ley 1996 de 2019"
+    tipo: "ley"
+    numero: "1996"
+    anio: "2019"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1996_2019.html"
+    url: ""
+    items_del_banco: null
+    areas: ["civil", "familia"]
+    canonico: ["ley", "1996", "2019"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Capacidad legal y apoyos; modifica el Código Civil (vigencia temporal)."
+  - doc_id: "ley_25_1992"
+    nombre_citable: "Ley 25 de 1992"
+    tipo: "ley"
+    numero: "25"
+    anio: "1992"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0025_1992.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "25", "1992"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Causales de divorcio y efectos civiles."
+  - doc_id: "ley_294_1996"
+    nombre_citable: "Ley 294 de 1996"
+    tipo: "ley"
+    numero: "294"
+    anio: "1996"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0294_1996.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "294", "1996"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Medidas de protección; autoridad competente."
+  - doc_id: "sentencia_c_29_2009"
+    nombre_citable: "Sentencia C-029 de 2009"
+    tipo: "sentencia"
+    numero: "C-29"
+    anio: "2009"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-029%20de%202009"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-29", "2009"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Interpretación sistemática de la protección de la familia."
+  - doc_id: "sentencia_c_71_2015"
+    nombre_citable: "Sentencia C-071 de 2015"
+    tipo: "sentencia"
+    numero: "C-71"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-071%20de%202015"
+    url: "https://www.corteconstitucional.gov.co/relatoria/2015/c-071-15.htm"
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-71", "2015"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa la C-683 de 2015 (en el seed)."
+    nota_verificacion: "Confirmada por el equipo: adopción complementaria homoparental."
+  - doc_id: "sentencia_c_75_2007"
+    nombre_citable: "Sentencia C-075 de 2007"
+    tipo: "sentencia"
+    numero: "C-75"
+    anio: "2007"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-075%20de%202007"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-75", "2007"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa la Ley 54 de 1990 (en el seed)."
+  - doc_id: "sentencia_c_577_2011"
+    nombre_citable: "Sentencia C-577 de 2011"
+    tipo: "sentencia"
+    numero: "C-577"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-577%20de%202011"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["jurisprudencia", "C-577", "2011"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Hito que antecede a la SU-214 de 2016 (en el seed)."
+  - doc_id: "ley_1878_2018"
+    nombre_citable: "Ley 1878 de 2018"
+    tipo: "ley"
+    numero: "1878"
+    anio: "2018"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1878_2018.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "1878", "2018"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Modifica el Código de Infancia (en el seed)."
+  - doc_id: "ley_2097_2021"
+    nombre_citable: "Ley 2097 de 2021"
+    tipo: "ley"
+    numero: "2097"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2097_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "2097", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Alimentos."
+  - doc_id: "ley_2126_2021"
+    nombre_citable: "Ley 2126 de 2021"
+    tipo: "ley"
+    numero: "2126"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2126_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "2126", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Autoridad competente en familia."
+  - doc_id: "ley_258_1996"
+    nombre_citable: "Ley 258 de 1996"
+    tipo: "ley"
+    numero: "258"
+    anio: "1996"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0258_1996.html"
+    url: ""
+    items_del_banco: null
+    areas: ["civil", "familia"]
+    canonico: ["ley", "258", "1996"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "También familia."
+  - doc_id: "ley_1361_2009"
+    nombre_citable: "Ley 1361 de 2009"
+    tipo: "ley"
+    numero: "1361"
+    anio: "2009"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1361_2009.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "1361", "2009"]
+    origen: "auditoria_2026-09-30"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Protección integral a la familia."
+  - doc_id: "decreto_1260_1970"
+    nombre_citable: "Decreto 1260 de 1970"
+    tipo: "decreto"
+    numero: "1260"
+    anio: "1970"
+    organo_emisor: "Presidencia de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1260_1970.html"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1260_1970.html"
+    items_del_banco: null
+    areas: ["familia", "civil"]
+    canonico: ["decreto", "1260", "1970"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Estatuto del Registro del Estado Civil: inscripción, corrección, sustitución y reconocimiento."
+  - doc_id: "ley_1934_2018"
+    nombre_citable: "Ley 1934 de 2018"
+    tipo: "ley"
+    numero: "1934"
+    anio: "2018"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1934_2018.html"
+    url: ""
+    items_del_banco: null
+    areas: ["familia"]
+    canonico: ["ley", "1934", "2018"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Nombrada en el conjunto de evaluación (1 pregunta) y ausente del corpus."

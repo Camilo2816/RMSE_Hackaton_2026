@@ -1,0 +1,552 @@
+# Derecho penal
+# Banco completo: 123 ítems (26 cerradas, 93 semiabiertas, 4 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: penal
+documentos:
+  - doc_id: "sentencia_c_355_2006"
+    nombre_citable: "Sentencia C-355 de 2006"
+    tipo: "sentencia"
+    numero: "C-355"
+    anio: "2006"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-355%20de%202006"
+    url: ""
+    items_del_banco: 7
+    areas: ["constitucional", "penal"]
+    canonico: ["jurisprudencia", "C-355", "2006"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 7 ítem(s) del banco según el seed. En legal_basis de muestra (ids 1015)."
+  - doc_id: "sentencia_c_55_2022"
+    nombre_citable: "Sentencia C-55 de 2022"
+    tipo: "sentencia"
+    numero: "C-55"
+    anio: "2022"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-55%20de%202022"
+    url: ""
+    items_del_banco: 3
+    areas: ["constitucional", "penal"]
+    canonico: ["jurisprudencia", "C-55", "2022"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "ley_1095_2006"
+    nombre_citable: "Ley 1095 de 2006"
+    tipo: "ley"
+    numero: "1095"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201095%20de%202006"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "penal"]
+    canonico: ["ley", "1095", "2006"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_15_2018"
+    nombre_citable: "Sentencia C-15 de 2018"
+    tipo: "sentencia"
+    numero: "C-15"
+    anio: "2018"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-15%20de%202018"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "penal"]
+    canonico: ["jurisprudencia", "C-15", "2018"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_164_2022"
+    nombre_citable: "Sentencia C-164 de 2022"
+    tipo: "sentencia"
+    numero: "C-164"
+    anio: "2022"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-164%20de%202022"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "penal"]
+    canonico: ["jurisprudencia", "C-164", "2022"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_431_2001"
+    nombre_citable: "Sentencia C-431 de 2001"
+    tipo: "sentencia"
+    numero: "C-431"
+    anio: "2001"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-431%20de%202001"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "penal"]
+    canonico: ["jurisprudencia", "C-431", "2001"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_sp_1680_2022"
+    nombre_citable: "Sentencia SP-1680 de 2022"
+    tipo: "sentencia"
+    numero: "SP-1680"
+    anio: "2022"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Penal"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/relatorias/pe/b1may2022/SP1680-2022(60875).pdf"
+    items_del_banco: 2
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "SP-1680", "2022"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_sp_1945_2019"
+    nombre_citable: "Sentencia SP-1945 de 2019"
+    tipo: "sentencia"
+    numero: "SP-1945"
+    anio: "2019"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Penal"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SP-1945%20de%202019"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/relatorias/pe/b1ago2019/SP1945-2019(50523).PDF"
+    items_del_banco: 2
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "SP-1945", "2019"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "decreto_780_2016"
+    nombre_citable: "Decreto 780 de 2016"
+    tipo: "decreto"
+    numero: "780"
+    anio: "2016"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20780%20de%202016"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77813"
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["decreto", "780", "2016"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_600_2000"
+    nombre_citable: "Ley 600 de 2000"
+    tipo: "ley"
+    numero: "600"
+    anio: "2000"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20600%20de%202000"
+    url: ""
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["ley", "600", "2000"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_1189_2000"
+    nombre_citable: "Sentencia C-1189 de 2000"
+    tipo: "sentencia"
+    numero: "C-1189"
+    anio: "2000"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-1189%20de%202000"
+    url: ""
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "C-1189", "2000"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_335_2008"
+    nombre_citable: "Sentencia C-335 de 2008"
+    tipo: "sentencia"
+    numero: "C-335"
+    anio: "2008"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-335%20de%202008"
+    url: ""
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "C-335", "2008"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_sp_1167_2022"
+    nombre_citable: "Sentencia SP-1167 de 2022"
+    tipo: "sentencia"
+    numero: "SP-1167"
+    anio: "2022"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Penal"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/relatorias/pe/b1may2022/SP1167-2022(57957).pdf"
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "SP-1167", "2022"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_sp_3218_2021"
+    nombre_citable: "Sentencia SP-3218 de 2021"
+    tipo: "sentencia"
+    numero: "SP-3218"
+    anio: "2021"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Penal"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/relatorias/pe/b1ago2021/SP3218-2021(47063).pdf"
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "SP-3218", "2021"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_su_429_2024"
+    nombre_citable: "Sentencia SU-429 de 2024"
+    tipo: "sentencia"
+    numero: "SU-429"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-429%20de%202024"
+    url: ""
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "SU-429", "2024"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_248_2025"
+    nombre_citable: "Sentencia T-248 de 2025"
+    tipo: "sentencia"
+    numero: "T-248"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-248%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "T-248", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "codigo_penal"
+    nombre_citable: "Código Penal"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["codigo_penal", null, null]
+    origen: "citations.CODES"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citado en legal_basis de muestra (ids 280, 600, 1065). Tipos penales, dosificación, subrogados."
+  - doc_id: "codigo_procedimiento_penal"
+    nombre_citable: "Código de Procedimiento Penal"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["codigo_procedimiento_penal", null, null]
+    origen: "citations.CODES"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Procedimiento acusatorio; juez que decide, postura procesal y requisitos."
+  - doc_id: "csj_penal_hitos_por_verificar"
+    nombre_citable: "Sentencias hito de la Sala de Casación Penal"
+    tipo: "sentencia"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://cortesuprema.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "por_verificar"
+    justificacion: "El seed trae 4 SP; completar con hitos que indiquen los compañeros de derecho."
+  - doc_id: "ley_1453_2011"
+    nombre_citable: "Ley 1453 de 2011"
+    tipo: "ley"
+    numero: "1453"
+    anio: "2011"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1453_2011.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "1453", "2011"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reforma Código Penal y CPP."
+  - doc_id: "ley_1709_2014"
+    nombre_citable: "Ley 1709 de 2014"
+    tipo: "ley"
+    numero: "1709"
+    anio: "2014"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1709_2014.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "1709", "2014"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Subrogados penales y vigencia temporal."
+  - doc_id: "ley_1761_2015"
+    nombre_citable: "Ley 1761 de 2015"
+    tipo: "ley"
+    numero: "1761"
+    anio: "2015"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1761_2015.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "1761", "2015"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Existencia normativa de tipos penales."
+  - doc_id: "ley_1826_2017"
+    nombre_citable: "Ley 1826 de 2017"
+    tipo: "ley"
+    numero: "1826"
+    anio: "2017"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1826_2017.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "1826", "2017"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Postura procesal y procedimiento especial."
+  - doc_id: "ley_65_1993"
+    nombre_citable: "Ley 65 de 1993"
+    tipo: "ley"
+    numero: "65"
+    anio: "1993"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0065_1993.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "65", "1993"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ejecución de la pena; libertad condicional (muestra 280 junto al Código Penal)."
+  - doc_id: "sentencia_c_221_1994"
+    nombre_citable: "Sentencia C-221 de 1994"
+    tipo: "sentencia"
+    numero: "C-221"
+    anio: "1994"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-221%20de%201994"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "C-221", "1994"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ponderación de principios; también constitucional."
+  - doc_id: "sentencia_c_294_2021"
+    nombre_citable: "Sentencia C-294 de 2021"
+    tipo: "sentencia"
+    numero: "C-294"
+    anio: "2021"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-294%20de%202021"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "C-294", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Vigencia y control de reformas constitucionales en materia penal."
+  - doc_id: "sentencia_c_591_2005"
+    nombre_citable: "Sentencia C-591 de 2005"
+    tipo: "sentencia"
+    numero: "C-591"
+    anio: "2005"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-591%20de%202005"
+    url: "https://www.corteconstitucional.gov.co/relatoria/2005/c-591-05.htm"
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["jurisprudencia", "C-591", "2005"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Postura procesal en el CPP."
+    nota_verificacion: "Confirmada por el equipo: sistema penal acusatorio y juez de control de garantías."
+  - doc_id: "ley_1121_2006"
+    nombre_citable: "Ley 1121 de 2006"
+    tipo: "ley"
+    numero: "1121"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1121_2006.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "1121", "2006"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Exclusión de beneficios; tipos especiales."
+  - doc_id: "ley_1273_2009"
+    nombre_citable: "Ley 1273 de 2009"
+    tipo: "ley"
+    numero: "1273"
+    anio: "2009"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1273_2009.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "1273", "2009"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Tipos penales especiales."
+  - doc_id: "ley_2098_2021"
+    nombre_citable: "Ley 2098 de 2021"
+    tipo: "ley"
+    numero: "2098"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2098_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "2098", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Declarada inexequible (C-294 de 2021): vigencia temporal."
+  - doc_id: "ley_2197_2022"
+    nombre_citable: "Ley 2197 de 2022"
+    tipo: "ley"
+    numero: "2197"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2197_2022.html"
+    url: ""
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "2197", "2022"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reformas recientes al Código Penal."
+  - doc_id: "ley_1708_2014"
+    nombre_citable: "Ley 1708 de 2014"
+    tipo: "ley"
+    numero: "1708"
+    anio: "2014"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1708_2014.html"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1708_2014.html"
+    items_del_banco: null
+    areas: ["penal"]
+    canonico: ["ley", "1708", "2014"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Código de Extinción de Dominio."

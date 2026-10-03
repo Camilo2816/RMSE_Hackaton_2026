@@ -1,0 +1,37 @@
+# Normas transversales a casi todas las áreas: Constitución y CGP.
+area: transversales
+documentos:
+  - doc_id: "constitucion"
+    nombre_citable: "Constitución Política de Colombia"
+    tipo: "constitucion"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html?q=Constitucion"
+    url: ""
+    items_del_banco: 90
+    areas: ["administrativo", "comercial", "constitucional", "familia", "mercados", "laboral", "penal", "procesal", "tributario"]
+    canonico: ["constitucion", null, null]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 0
+    estado: "pendiente"
+    justificacion: "Norma más citada del banco. Jerarquía, existencia normativa, ponderación y conflicto normativo en todas las áreas. Citada en 90 ítem(s) del banco según el seed. En legal_basis de muestra (ids 51, 60, 218, 661, 1005, 1073)."
+  - doc_id: "codigo_general_proceso"
+    nombre_citable: "Código General del Proceso"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Codigo%20general%20proceso"
+    url: ""
+    items_del_banco: 65
+    areas: ["civil", "comercial", "familia", "mercados", "penal", "procesal", "tributario"]
+    canonico: ["codigo_general_proceso", null, null]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 0
+    estado: "pendiente"
+    justificacion: "Juez que decide, autoridad competente, requisitos y términos; transversal a civil, familia y comercial. Citada en 65 ítem(s) del banco según el seed. En legal_basis de muestra (ids 58, 60, 528, 589, 879)."

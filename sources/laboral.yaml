@@ -1,0 +1,945 @@
+# Derecho laboral
+# Banco completo: 87 ítems (23 cerradas, 58 semiabiertas, 6 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: laboral
+documentos:
+  - doc_id: "codigo_sustantivo_trabajo"
+    nombre_citable: "Código Sustantivo del Trabajo"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Codigo%20sustantivo%20trabajo"
+    url: ""
+    items_del_banco: 37
+    areas: ["laboral"]
+    canonico: ["codigo_sustantivo_trabajo", null, null]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Definiciones, requisitos y reproducción literal en laboral. Conservar las notas de vigencia de la Ley 2466 de 2025. Citada en 37 ítem(s) del banco según el seed. En legal_basis de muestra (ids 617, 253, 442, 1073)."
+  - doc_id: "sentencia_sl_3385_2022"
+    nombre_citable: "Sentencia SL-3385 de 2022"
+    tipo: "sentencia"
+    numero: "SL-3385"
+    anio: "2022"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Laboral"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://www.cortesuprema.gov.co/corte/wp-content/uploads/relatorias/la/bnov2022/SL3385-2022.pdf"
+    items_del_banco: 4
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SL-3385", "2022"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 4 ítem(s) del banco según el seed. En legal_basis de muestra (ids 253). El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "ley_1010_2006"
+    nombre_citable: "Ley 1010 de 2006"
+    tipo: "ley"
+    numero: "1010"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201010%20de%202006"
+    url: ""
+    items_del_banco: 3
+    areas: ["laboral"]
+    canonico: ["ley", "1010", "2006"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed. En legal_basis de muestra (ids 79)."
+  - doc_id: "sentencia_t_243_2018"
+    nombre_citable: "Sentencia T-243 de 2018"
+    tipo: "sentencia"
+    numero: "T-243"
+    anio: "2018"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-243%20de%202018"
+    url: ""
+    items_del_banco: 3
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "T-243", "2018"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "ley_2141_2021"
+    nombre_citable: "Ley 2141 de 2021"
+    tipo: "ley"
+    numero: "2141"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202141%20de%202021"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "laboral"]
+    canonico: ["ley", "2141", "2021"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "ley_2452_2025"
+    nombre_citable: "Ley 2452 de 2025"
+    tipo: "ley"
+    numero: "2452"
+    anio: "2025"
+    organo_emisor: "Congreso de la República"
+    alias_citables: ["Código Procesal del Trabajo y de la Seguridad Social"]
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202452%20de%202025"
+    url: ""
+    items_del_banco: 2
+    areas: ["laboral"]
+    canonico: ["ley", "2452", "2025"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "ley_2466_2025"
+    nombre_citable: "Ley 2466 de 2025"
+    tipo: "ley"
+    numero: "2466"
+    anio: "2025"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202466%20de%202025"
+    url: ""
+    items_del_banco: 2
+    areas: ["laboral"]
+    canonico: ["ley", "2466", "2025"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "ley_50_1990"
+    nombre_citable: "Ley 50 de 1990"
+    tipo: "ley"
+    numero: "50"
+    anio: "1990"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%2050%20de%201990"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=281"
+    items_del_banco: 2
+    areas: ["laboral"]
+    canonico: ["ley", "50", "1990"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_sl_648_2018"
+    nombre_citable: "Sentencia SL-648 de 2018"
+    tipo: "sentencia"
+    numero: "SL-648"
+    anio: "2018"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Laboral"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/2018/03/SL648-2018-55122-Acoso-sexual-en-el-trabajo.pdf"
+    items_del_banco: 2
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SL-648", "2018"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema. El PDF de la URL está escaneado (sin capa de texto): el texto se toma de una copia digital equivalente entregada por el equipo (corpus/raw/<doc_id>/_descarga.json)."
+  - doc_id: "sentencia_su_111_2025"
+    nombre_citable: "Sentencia SU-111 de 2025"
+    tipo: "sentencia"
+    numero: "SU-111"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-111%20de%202025"
+    url: ""
+    items_del_banco: 2
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SU-111", "2025"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_547_2017"
+    nombre_citable: "Sentencia T-547 de 2017"
+    tipo: "sentencia"
+    numero: "T-547"
+    anio: "2017"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-547%20de%202017"
+    url: ""
+    items_del_banco: 2
+    areas: ["constitucional", "laboral"]
+    canonico: ["jurisprudencia", "T-547", "2017"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "decreto_405_2025"
+    nombre_citable: "Decreto 405 de 2025"
+    tipo: "decreto"
+    numero: "405"
+    anio: "2025"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20405%20de%202025"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259517"
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["decreto", "405", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "decreto_875_2008"
+    nombre_citable: "Decreto 875 de 2008"
+    tipo: "decreto"
+    numero: "875"
+    anio: "2008"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "Normograma de la Cancillería"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20875%20de%202008"
+    url: "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0875_2008.htm"
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["decreto", "875", "2008"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1562_2012"
+    nombre_citable: "Ley 1562 de 2012"
+    tipo: "ley"
+    numero: "1562"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201562%20de%202012"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["ley", "1562", "2012"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 253)."
+  - doc_id: "ley_2114_2021"
+    nombre_citable: "Ley 2114 de 2021"
+    tipo: "ley"
+    numero: "2114"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202114%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["ley", "2114", "2021"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_2737_1989"
+    nombre_citable: "Ley 2737 de 1989"
+    tipo: "ley"
+    numero: "2737"
+    anio: "1989"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202737%20de%201989"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["ley", "2737", "1989"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. Probablemente el Decreto 2737 de 1989 (antiguo Código del Menor, derogado)."
+  - doc_id: "sentencia_c_170_2004"
+    nombre_citable: "Sentencia C-170 de 2004"
+    tipo: "sentencia"
+    numero: "C-170"
+    anio: "2004"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-170%20de%202004"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "C-170", "2004"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_201_2002"
+    nombre_citable: "Sentencia C-201 de 2002"
+    tipo: "sentencia"
+    numero: "C-201"
+    anio: "2002"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-201%20de%202002"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "C-201", "2002"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_535_2002"
+    nombre_citable: "Sentencia C-535 de 2002"
+    tipo: "sentencia"
+    numero: "C-535"
+    anio: "2002"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-535%20de%202002"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "C-535", "2002"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_sl_1050_2023"
+    nombre_citable: "Sentencia SL-1050 de 2023"
+    tipo: "sentencia"
+    numero: "SL-1050"
+    anio: "2023"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Laboral"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/2023/07/SL1050-2023.pdf"
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SL-1050", "2023"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_sl_1730_2020"
+    nombre_citable: "Sentencia SL-1730 de 2020"
+    tipo: "sentencia"
+    numero: "SL-1730"
+    anio: "2020"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Laboral"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SL-1730%20de%202020"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/relatorias/la/bjul2020/SL1730-2020.pdf"
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SL-1730", "2020"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_sl_1972_2025"
+    nombre_citable: "Sentencia SL-1972 de 2025"
+    tipo: "sentencia"
+    numero: "SL-1972"
+    anio: "2025"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Laboral"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SL-1972%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SL-1972", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_su_149_2021"
+    nombre_citable: "Sentencia SU-149 de 2021"
+    tipo: "sentencia"
+    numero: "SU-149"
+    anio: "2021"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-149%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SU-149", "2021"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_27_2021"
+    nombre_citable: "Sentencia SU-27 de 2021"
+    tipo: "sentencia"
+    numero: "SU-27"
+    anio: "2021"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-27%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SU-27", "2021"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_296_2023"
+    nombre_citable: "Sentencia SU-296 de 2023"
+    tipo: "sentencia"
+    numero: "SU-296"
+    anio: "2023"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-296%20de%202023"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SU-296", "2023"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_396_2024"
+    nombre_citable: "Sentencia SU-396 de 2024"
+    tipo: "sentencia"
+    numero: "SU-396"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-396%20de%202024"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SU-396", "2024"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_1059_2001"
+    nombre_citable: "Sentencia T-1059 de 2001"
+    tipo: "sentencia"
+    numero: "T-1059"
+    anio: "2001"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-1059%20de%202001"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "T-1059", "2001"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_t_145_2016"
+    nombre_citable: "Sentencia T-145 de 2016"
+    tipo: "sentencia"
+    numero: "T-145"
+    anio: "2016"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-145%20de%202016"
+    url: ""
+    items_del_banco: 1
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "T-145", "2016"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "codigo_procesal_trabajo"
+    nombre_citable: "Código Procesal del Trabajo y de la Seguridad Social"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    alias_citables: ["Decreto Ley 2158 de 1948"]
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["codigo_procesal_trabajo", null, null]
+    origen: "citations.CODES"
+    prioridad: "media"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Procesos laborales iniciados antes del 6 de abril de 2026; el nuevo CPTSS (Ley 2452 de 2025) ya está en el seed."
+  - doc_id: "ley_100_1993"
+    nombre_citable: "Ley 100 de 1993"
+    tipo: "ley"
+    numero: "100"
+    anio: "1993"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0100_1993.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "100", "1993"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Régimen pensional y de salud vigente mientras la Ley 2381 de 2024 no entre a regir."
+  - doc_id: "csj_laboral_hitos_por_verificar"
+    nombre_citable: "Sentencias hito de la Sala de Casación Laboral"
+    tipo: "sentencia"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://cortesuprema.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "por_verificar"
+    justificacion: "El seed trae 5 SL; completar con hitos que indiquen los compañeros de derecho."
+  - doc_id: "decreto_1072_2015"
+    nombre_citable: "Decreto 1072 de 2015"
+    tipo: "decreto"
+    numero: "1072"
+    anio: "2015"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201072%20de%202015"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173"
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["decreto", "1072", "2015"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reglamentos laborales, SG-SST y riesgos."
+  - doc_id: "ley_1822_2017"
+    nombre_citable: "Ley 1822 de 2017"
+    tipo: "ley"
+    numero: "1822"
+    anio: "2017"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1822_2017.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "1822", "2017"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Licencias y fuero de maternidad."
+  - doc_id: "ley_2101_2021"
+    nombre_citable: "Ley 2101 de 2021"
+    tipo: "ley"
+    numero: "2101"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2101_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "2101", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Vigencia escalonada de la jornada."
+  - doc_id: "ley_2381_2024"
+    nombre_citable: "Ley 2381 de 2024"
+    tipo: "ley"
+    numero: "2381"
+    anio: "2024"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2381_2024.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "2381", "2024"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Diferida al 1 de abril de 2027 por la C-264 de 2026; marcar como no vigente."
+  - doc_id: "ley_361_1997"
+    nombre_citable: "Ley 361 de 1997"
+    tipo: "ley"
+    numero: "361"
+    anio: "1997"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0361_1997.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "361", "1997"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Estabilidad laboral reforzada."
+  - doc_id: "ley_789_2002"
+    nombre_citable: "Ley 789 de 2002"
+    tipo: "ley"
+    numero: "789"
+    anio: "2002"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0789_2002.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "789", "2002"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Modificada por la Ley 2466 de 2025; vigencia temporal."
+  - doc_id: "sentencia_c_264_2026"
+    nombre_citable: "Sentencia C-264 de 2026"
+    tipo: "sentencia"
+    numero: "C-264"
+    anio: "2026"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-264%20de%202026"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "C-264", "2026"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Fijó la entrada en vigencia en abril de 2027; vigencia temporal."
+  - doc_id: "sentencia_c_614_2009"
+    nombre_citable: "Sentencia C-614 de 2009"
+    tipo: "sentencia"
+    numero: "C-614"
+    anio: "2009"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-614%20de%202009"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "C-614", "2009"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Contrato realidad."
+  - doc_id: "sentencia_su_49_2017"
+    nombre_citable: "Sentencia SU-049 de 2017"
+    tipo: "sentencia"
+    numero: "SU-49"
+    anio: "2017"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-049%20de%202017"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SU-49", "2017"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Sentencia de unificación."
+  - doc_id: "sentencia_su_75_2018"
+    nombre_citable: "Sentencia SU-075 de 2018"
+    tipo: "sentencia"
+    numero: "SU-75"
+    anio: "2018"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-075%20de%202018"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SU-75", "2018"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Sentencia de unificación; fuero de maternidad."
+  - doc_id: "decreto_1295_1994"
+    nombre_citable: "Decreto 1295 de 1994"
+    tipo: "decreto"
+    numero: "1295"
+    anio: "1994"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201295%20de%201994"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["decreto", "1295", "1994"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Riesgos laborales (muestra 253)."
+  - doc_id: "ley_1221_2008"
+    nombre_citable: "Ley 1221 de 2008"
+    tipo: "ley"
+    numero: "1221"
+    anio: "2008"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1221_2008.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "1221", "2008"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Modalidades de trabajo."
+  - doc_id: "ley_2088_2021"
+    nombre_citable: "Ley 2088 de 2021"
+    tipo: "ley"
+    numero: "2088"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2088_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "2088", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Modalidades de trabajo."
+  - doc_id: "ley_2121_2021"
+    nombre_citable: "Ley 2121 de 2021"
+    tipo: "ley"
+    numero: "2121"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2121_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "2121", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Modalidades de trabajo."
+  - doc_id: "ley_776_2002"
+    nombre_citable: "Ley 776 de 2002"
+    tipo: "ley"
+    numero: "776"
+    anio: "2002"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0776_2002.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "776", "2002"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa la Ley 1562 de 2012 (en el seed)."
+  - doc_id: "decreto_1572_2024"
+    nombre_citable: "Decreto 1572 de 2024"
+    tipo: "decreto"
+    numero: "1572"
+    anio: "2024"
+    organo_emisor: "Presidencia de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1572_2024.html"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=257156"
+    items_del_banco: null
+    areas: ["laboral", "procesal", "tributario"]
+    canonico: ["decreto", "1572", "2024"]
+    origen: "auditoria_2026-09-30"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Fija el salario mínimo de 2025 ($1.423.500). Las cuantías procesales y muchos topes se expresan en smlmv y el corpus no tenía la cifra (ítem 528 de la muestra)."
+  - doc_id: "decreto_1833_2016"
+    nombre_citable: "Decreto 1833 de 2016"
+    tipo: "decreto"
+    numero: "1833"
+    anio: "2016"
+    organo_emisor: "Presidencia de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/decreto_1833_2016.html"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=85319"
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["decreto", "1833", "2016"]
+    origen: "auditoria_2026-09-30"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Compilación de las normas del Sistema General de Pensiones."
+  - doc_id: "ley_2191_2022"
+    nombre_citable: "Ley 2191 de 2022"
+    tipo: "ley"
+    numero: "2191"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2191_2022.html"
+    url: ""
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "2191", "2022"]
+    origen: "auditoria_2026-09-30"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Desconexión laboral."
+  - doc_id: "ley_79_1988"
+    nombre_citable: "Ley 79 de 1988"
+    tipo: "ley"
+    numero: "79"
+    anio: "1988"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1625669"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-79-1988.md"
+    items_del_banco: null
+    areas: ["laboral", "comercial"]
+    canonico: ["ley", "79", "1988"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Legislación cooperativa (cooperativas y precooperativas de trabajo asociado). Se toma de SUIN vía legalize-co: la versión de Función Pública (norma.php?i=9211) traía el art. 99 sin la reforma del art. 39 de la Ley 454 de 1998."
+  - doc_id: "decreto_1469_2025"
+    nombre_citable: "Decreto 1469 de 2025"
+    tipo: "decreto"
+    numero: "1469"
+    anio: "2025"
+    organo_emisor: "Presidencia de la República"
+    fuente: "Cancillería (normograma)"
+    donde_buscar: "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_1469_2025.htm"
+    url: "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_1469_2025.htm"
+    items_del_banco: null
+    areas: ["laboral", "procesal", "tributario"]
+    canonico: ["decreto", "1469", "2025"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Salario mínimo 2026 (suspendido provisionalmente por el Consejo de Estado). Fija valores de 2026 (auditoría de cobertura 2026-10-01): las cuantías procesales, topes laborales y sanciones se expresan en smlmv/UVT."
+  - doc_id: "decreto_1470_2025"
+    nombre_citable: "Decreto 1470 de 2025"
+    tipo: "decreto"
+    numero: "1470"
+    anio: "2025"
+    organo_emisor: "Presidencia de la República"
+    fuente: "Cancillería (normograma)"
+    donde_buscar: "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_1470_2025.htm"
+    url: "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_1470_2025.htm"
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["decreto", "1470", "2025"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Auxilio de transporte 2026. Fija valores de 2026 (auditoría de cobertura 2026-10-01): las cuantías procesales, topes laborales y sanciones se expresan en smlmv/UVT."
+  - doc_id: "decreto_159_2026"
+    nombre_citable: "Decreto 159 de 2026"
+    tipo: "decreto"
+    numero: "159"
+    anio: "2026"
+    organo_emisor: "Presidencia de la República"
+    alias_citables: ["Decreto 0159 de 2026"]
+    fuente: "Cancillería (normograma)"
+    donde_buscar: "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0159_2026.htm"
+    url: "https://www.cancilleria.gov.co/normograma/compilacion/docs/decreto_0159_2026.htm"
+    items_del_banco: null
+    areas: ["laboral", "procesal", "tributario"]
+    canonico: ["decreto", "159", "2026"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Fija transitoriamente el salario mínimo 2026 tras la suspensión del Decreto 1469 de 2025. Fija valores de 2026 (auditoría de cobertura 2026-10-01): las cuantías procesales, topes laborales y sanciones se expresan en smlmv/UVT."
+  - doc_id: "sentencia_sl_3871_2021"
+    nombre_citable: "Sentencia SL-3871 de 2021"
+    tipo: "sentencia"
+    numero: "SL-3871"
+    anio: "2021"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Laboral"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://cortesuprema.gov.co/corte/wp-content/uploads/relatorias/la/bnov2021/SL3871-2021.pdf"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/relatorias/la/bnov2021/SL3871-2021.pdf"
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["jurisprudencia", "SL-3871", "2021"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Sentencia nombrada en el conjunto de evaluación (1 pregunta) y ausente del corpus."
+  - doc_id: "ley_1210_2008"
+    nombre_citable: "Ley 1210 de 2008"
+    tipo: "ley"
+    numero: "1210"
+    anio: "2008"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1675597"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-1210-2008.md"
+    items_del_banco: null
+    areas: ["laboral"]
+    canonico: ["ley", "1210", "2008"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Calificación judicial de la ilegalidad de la huelga (modifica los arts. 448 y 451 del CST). Pregunta del conjunto de evaluación respondida con la regla anterior; texto consolidado de SUIN vía legalize-co."

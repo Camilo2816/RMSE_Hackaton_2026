@@ -1,0 +1,572 @@
+# Derecho tributario
+# Banco completo: 92 ítems (22 cerradas, 66 semiabiertas, 4 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: tributario
+documentos:
+  - doc_id: "estatuto_tributario"
+    nombre_citable: "Estatuto Tributario"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Estatuto%20tributario"
+    url: ""
+    items_del_banco: 35
+    areas: ["civil", "constitucional", "tributario"]
+    canonico: ["estatuto_tributario", null, null]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Definiciones, requisitos y vigencia temporal en tributario. Citada en 35 ítem(s) del banco según el seed."
+  - doc_id: "ley_153_1887"
+    nombre_citable: "Ley 153 de 1887"
+    tipo: "ley"
+    numero: "153"
+    anio: "1887"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20153%20de%201887"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=15805"
+    items_del_banco: 3
+    areas: ["civil", "tributario"]
+    canonico: ["ley", "153", "1887"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_117_2018"
+    nombre_citable: "Sentencia C-117 de 2018"
+    tipo: "sentencia"
+    numero: "C-117"
+    anio: "2018"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-117%20de%202018"
+    url: ""
+    items_del_banco: 2
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-117", "2018"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_35_2009"
+    nombre_citable: "Sentencia C-35 de 2009"
+    tipo: "sentencia"
+    numero: "C-35"
+    anio: "2009"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-35%20de%202009"
+    url: ""
+    items_del_banco: 2
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-35", "2009"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_500_2024"
+    nombre_citable: "Sentencia C-500 de 2024"
+    tipo: "sentencia"
+    numero: "C-500"
+    anio: "2024"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-500%20de%202024"
+    url: ""
+    items_del_banco: 2
+    areas: ["procesal", "tributario"]
+    canonico: ["jurisprudencia", "C-500", "2024"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_540_2023"
+    nombre_citable: "Sentencia C-540 de 2023"
+    tipo: "sentencia"
+    numero: "C-540"
+    anio: "2023"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-540%20de%202023"
+    url: ""
+    items_del_banco: 2
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-540", "2023"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "decreto_1742_2020"
+    nombre_citable: "Decreto 1742 de 2020"
+    tipo: "decreto"
+    numero: "1742"
+    anio: "2020"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201742%20de%202020"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["decreto", "1742", "2020"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "decreto_175_2025"
+    nombre_citable: "Decreto 175 de 2025"
+    tipo: "decreto"
+    numero: "175"
+    anio: "2025"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20175%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["decreto", "175", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_137_1994"
+    nombre_citable: "Ley 137 de 1994"
+    tipo: "ley"
+    numero: "137"
+    anio: "1994"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20137%20de%201994"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["ley", "137", "1994"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1473_2011"
+    nombre_citable: "Ley 1473 de 2011"
+    tipo: "ley"
+    numero: "1473"
+    anio: "2011"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201473%20de%202011"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["ley", "1473", "2011"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1607_2012"
+    nombre_citable: "Ley 1607 de 2012"
+    tipo: "ley"
+    numero: "1607"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201607%20de%202012"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["ley", "1607", "2012"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1692_2013"
+    nombre_citable: "Ley 1692 de 2013"
+    tipo: "ley"
+    numero: "1692"
+    anio: "2013"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201692%20de%202017"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1692_2013.html"
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["ley", "1692", "2013"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+    nota_verificacion: "El seed la cita como 'Ley 1692 de 2017', que no existe; es la Ley 1692 de 2013 (convenio con Portugal para evitar la doble imposición)."
+  - doc_id: "ley_1819_2016"
+    nombre_citable: "Ley 1819 de 2016"
+    tipo: "ley"
+    numero: "1819"
+    anio: "2016"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201819%20de%202016"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["ley", "1819", "2016"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_389_2023"
+    nombre_citable: "Sentencia C-389 de 2023"
+    tipo: "sentencia"
+    numero: "C-389"
+    anio: "2023"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-389%20de%202023"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-389", "2023"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_413_1996"
+    nombre_citable: "Sentencia C-413 de 1996"
+    tipo: "sentencia"
+    numero: "C-413"
+    anio: "1996"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-413%20de%201996"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-413", "1996"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_537_1995"
+    nombre_citable: "Sentencia C-537 de 1995"
+    tipo: "sentencia"
+    numero: "C-537"
+    anio: "1995"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-537%20de%201995"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-537", "1995"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_891_2012"
+    nombre_citable: "Sentencia C-891 de 2012"
+    tipo: "sentencia"
+    numero: "C-891"
+    anio: "2012"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-891%20de%202012"
+    url: ""
+    items_del_banco: 1
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-891", "2012"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 991)."
+  - doc_id: "doctrina_dian_por_verificar"
+    nombre_citable: "Doctrina oficial de la DIAN"
+    tipo: "doctrina"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "DIAN"
+    donde_buscar: "https://www.dian.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "excluido"
+    justificacion: "La muestra id 671 cita 'Doctrina.' sin identificarla; definir con los compañeros de derecho qué conceptos incluir."
+    motivo_exclusion: "Doctrina administrativa: no es norma citable por el extractor oficial y su volumen es alto frente a su aporte."
+  - doc_id: "sentencia_ce_2020ce_suj_4_005_2020"
+    nombre_citable: "Sentencia de unificación 2020CE-SUJ-4-005 del Consejo de Estado, Sección Cuarta"
+    tipo: "sentencia"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Relatoría del Consejo de Estado"
+    donde_buscar: "https://www.consejodeestado.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "excluido"
+    justificacion: "Citada en legal_basis de muestra (id 142): deducibilidad de gastos en renta."
+    motivo_exclusion: "Se ingiere desde SAMAI como sentencia_ce_25000233700020130044301 (sources/consejo_estado.yaml)."
+  - doc_id: "decreto_1333_1986"
+    nombre_citable: "Decreto 1333 de 1986"
+    tipo: "decreto"
+    numero: "1333"
+    anio: "1986"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201333%20de%201986"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["decreto", "1333", "1986"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Tributos municipales."
+  - doc_id: "decreto_1625_2016"
+    nombre_citable: "Decreto 1625 de 2016"
+    tipo: "decreto"
+    numero: "1625"
+    anio: "2016"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201625%20de%202016"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=83233"
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["decreto", "1625", "2016"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reglamenta el Estatuto Tributario (en el seed)."
+  - doc_id: "ley_14_1983"
+    nombre_citable: "Ley 14 de 1983"
+    tipo: "ley"
+    numero: "14"
+    anio: "1983"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0014_1983.html"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=267"
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["ley", "14", "1983"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Impuesto de industria y comercio (ICA); tributos territoriales."
+  - doc_id: "ley_2010_2019"
+    nombre_citable: "Ley 2010 de 2019"
+    tipo: "ley"
+    numero: "2010"
+    anio: "2019"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2010_2019.html"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["ley", "2010", "2019"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reexpidió la Ley 1943 de 2018 tras la C-481 de 2019."
+  - doc_id: "ley_2277_2022"
+    nombre_citable: "Ley 2277 de 2022"
+    tipo: "ley"
+    numero: "2277"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2277_2022.html"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["ley", "2277", "2022"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Vigencia temporal de las normas del ET."
+  - doc_id: "sentencia_c_481_2019"
+    nombre_citable: "Sentencia C-481 de 2019"
+    tipo: "sentencia"
+    numero: "C-481"
+    anio: "2019"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-481%20de%202019"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-481", "2019"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Vicios de trámite y vigencia temporal."
+  - doc_id: "sentencia_c_776_2003"
+    nombre_citable: "Sentencia C-776 de 2003"
+    tipo: "sentencia"
+    numero: "C-776"
+    anio: "2003"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-776%20de%202003"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["jurisprudencia", "C-776", "2003"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Principios tributarios (equidad, progresividad)."
+  - doc_id: "ley_1739_2014"
+    nombre_citable: "Ley 1739 de 2014"
+    tipo: "ley"
+    numero: "1739"
+    anio: "2014"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1739_2014.html"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["ley", "1739", "2014"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reformas al ET."
+  - doc_id: "ley_1943_2018"
+    nombre_citable: "Ley 1943 de 2018"
+    tipo: "ley"
+    numero: "1943"
+    anio: "2018"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1943_2018.html"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["ley", "1943", "2018"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Declarada inexequible (C-481 de 2019): vigencia temporal."
+  - doc_id: "ley_2155_2021"
+    nombre_citable: "Ley 2155 de 2021"
+    tipo: "ley"
+    numero: "2155"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2155_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["ley", "2155", "2021"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reformas al ET."
+  - doc_id: "resolucion_238_2025"
+    nombre_citable: "Resolución 238 de 2025"
+    tipo: "resolucion"
+    numero: "238"
+    anio: "2025"
+    organo_emisor: "Dirección de Impuestos y Aduanas Nacionales (DIAN)"
+    alias_citables: ["Resolución 000238 de 2025"]
+    fuente: "DIAN (normograma)"
+    donde_buscar: "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0238_2025.htm"
+    url: "https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0238_2025.htm"
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["resolucion", "238", "2025"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Valor de la UVT para 2026. El nombre citable va sin ceros: el extractor oficial no lee números de 6 dígitos (000238). Fija valores de 2026 (auditoría de cobertura 2026-10-01): las cuantías procesales, topes laborales y sanciones se expresan en smlmv/UVT."
+  - doc_id: "ley_1066_2006"
+    nombre_citable: "Ley 1066 de 2006"
+    tipo: "ley"
+    numero: "1066"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1673244"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-1066-2006.md"
+    items_del_banco: null
+    areas: ["tributario", "administrativo"]
+    canonico: ["ley", "1066", "2006"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Normalización de la cartera pública y cobro coactivo. No está en el corpus; texto consolidado de SUIN vía legalize-co (auditoría de cobertura 2026-10-01)."
+  - doc_id: "ley_788_2002"
+    nombre_citable: "Ley 788 de 2002"
+    tipo: "ley"
+    numero: "788"
+    anio: "2002"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1668340"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-788-2002.md"
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["ley", "788", "2002"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reforma tributaria; art. 59: procedimiento tributario territorial. No está en el corpus; texto consolidado de SUIN vía legalize-co (auditoría de cobertura 2026-10-01)."
+  - doc_id: "decreto_678_2020"
+    nombre_citable: "Decreto 678 de 2020"
+    tipo: "decreto"
+    numero: "678"
+    anio: "2020"
+    organo_emisor: "Presidencia de la República"
+    fuente: "Gestor Normativo de Función Pública"
+    donde_buscar: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=124662"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=124662"
+    items_del_banco: null
+    areas: ["tributario"]
+    canonico: ["decreto", "678", "2020"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Decreto Legislativo de la emergencia de 2020 (gestión tributaria de entidades territoriales) que revisó la Sentencia C-448 de 2020. Nombrado en el conjunto de evaluación (1 pregunta)."

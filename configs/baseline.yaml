@@ -1,0 +1,6 @@
+# BASELINE: una pasada, sin LLM en la planificación.
+pipeline: baseline
+planner:
+  type: passthrough
+verification:
+  max_iter: 0

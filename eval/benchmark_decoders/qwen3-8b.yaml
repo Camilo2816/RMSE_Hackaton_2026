@@ -1,0 +1,14 @@
+# Benchmark de decoders: configs/agentic.yaml con generation.model_ollama = qwen3:8b
+pipeline: agentic
+planner:
+  type: subqueries
+  n: 3
+  incluir_pregunta: true          # A/B: false = solo las subconsultas en el re-planeo
+verification:
+  max_iter: 1                     # re-planeos en total (antes o después de generar)
+  replan_min_rerank_score: 0.75   # evidencia débil: texto libre, sin lookup y mejor score del reranker < 0,75
+                                  # (sample_50: 8 de 35 ítems de texto libre; 247 0,61 y 679 0,62; siguiente 0,82)
+generation:
+  model_ollama: "qwen3:8b"
+  num_predict:
+    planner: 400

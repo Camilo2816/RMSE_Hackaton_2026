@@ -1,0 +1,136 @@
+{
+  "bge-m3": {
+    "modelo": "BAAI/bge-m3",
+    "dim": 1024,
+    "indexado_s": 0,
+    "denso_solo": {
+      "n": 41,
+      "body_hit@10": 0.9024,
+      "recall@10": 0.8571,
+      "propio@50": 0.9268,
+      "consulta_p50_s": 0.062
+    },
+    "pipeline": {
+      "n": 41,
+      "body_hit": 0.9268,
+      "recall_cuerpos": 0.898,
+      "article_hit": 0.5789,
+      "n_con_articulo": 19,
+      "replaneos": 0,
+      "docs_distintos": 4.22
+    },
+    "pipeline_fallos": [
+      128,
+      247,
+      679
+    ],
+    "pipeline_p95_s": 0.298
+  },
+  "e5-large": {
+    "modelo": "intfloat/multilingual-e5-large",
+    "dim": 1024,
+    "indexado_s": 171,
+    "denso_solo": {
+      "n": 41,
+      "body_hit@10": 0.8537,
+      "recall@10": 0.7959,
+      "propio@50": 0.8537,
+      "consulta_p50_s": 0.017
+    },
+    "pipeline": {
+      "n": 41,
+      "body_hit": 0.9268,
+      "recall_cuerpos": 0.898,
+      "article_hit": 0.5789,
+      "n_con_articulo": 19,
+      "replaneos": 0,
+      "docs_distintos": 4.05
+    },
+    "pipeline_fallos": [
+      128,
+      247,
+      679
+    ],
+    "pipeline_p95_s": 0.084
+  },
+  "arctic-l-v2": {
+    "modelo": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "dim": 1024,
+    "indexado_s": 153,
+    "denso_solo": {
+      "n": 41,
+      "body_hit@10": 0.9024,
+      "recall@10": 0.8571,
+      "propio@50": 0.878,
+      "consulta_p50_s": 0.026
+    },
+    "pipeline": {
+      "n": 41,
+      "body_hit": 0.9268,
+      "recall_cuerpos": 0.9184,
+      "article_hit": 0.5789,
+      "n_con_articulo": 19,
+      "replaneos": 0,
+      "docs_distintos": 3.98
+    },
+    "pipeline_fallos": [
+      128,
+      247,
+      679
+    ],
+    "pipeline_p95_s": 0.116
+  },
+  "qwen3-emb-4b": {
+    "modelo": "Qwen/Qwen3-Embedding-4B",
+    "dim": 2560,
+    "indexado_s": 1989,
+    "denso_solo": {
+      "n": 41,
+      "body_hit@10": 0.9512,
+      "recall@10": 0.9184,
+      "propio@50": 0.9268,
+      "consulta_p50_s": 0.053
+    },
+    "pipeline": {
+      "n": 41,
+      "body_hit": 0.9268,
+      "recall_cuerpos": 0.898,
+      "article_hit": 0.5789,
+      "n_con_articulo": 19,
+      "replaneos": 0,
+      "docs_distintos": 3.85
+    },
+    "pipeline_fallos": [
+      128,
+      247,
+      679
+    ],
+    "pipeline_p95_s": 0.134
+  },
+  "jina-v3": {
+    "modelo": "jinaai/jina-embeddings-v3",
+    "dim": 1024,
+    "indexado_s": 553,
+    "denso_solo": {
+      "n": 41,
+      "body_hit@10": 0.878,
+      "recall@10": 0.8571,
+      "propio@50": 0.9268,
+      "consulta_p50_s": 0.066
+    },
+    "pipeline": {
+      "n": 41,
+      "body_hit": 0.9512,
+      "recall_cuerpos": 0.9388,
+      "article_hit": 0.5263,
+      "n_con_articulo": 19,
+      "replaneos": 0,
+      "docs_distintos": 4.32
+    },
+    "pipeline_fallos": [
+      128,
+      247
+    ],
+    "pipeline_p95_s": 0.243
+  }
+}

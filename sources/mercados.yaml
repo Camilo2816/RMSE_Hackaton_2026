@@ -1,0 +1,504 @@
+# Derecho de los mercados (competencia, consumidor, datos personales, propiedad intelectual)
+# Banco completo: 72 ítems (20 cerradas, 46 semiabiertas, 6 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: mercados
+documentos:
+  - doc_id: "decision_andina_486"
+    nombre_citable: "Decisión 486 de la Comisión de la Comunidad Andina"
+    tipo: "decision_andina"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Decision%20andina%20486"
+    url: ""
+    items_del_banco: 23
+    areas: ["comercial", "mercados"]
+    canonico: ["decision_andina_486", null, null]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Propiedad industrial: marcas, patentes, diseños. Citada en 23 ítem(s) del banco según el seed."
+  - doc_id: "estatuto_consumidor"
+    nombre_citable: "Estatuto del Consumidor"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Estatuto%20consumidor"
+    url: ""
+    items_del_banco: 13
+    areas: ["civil", "mercados"]
+    canonico: ["estatuto_consumidor", null, null]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Consumidor y funciones jurisdiccionales de la SIC. Citada en 13 ítem(s) del banco según el seed. En legal_basis de muestra (ids 58, 674)."
+  - doc_id: "decreto_2153_1992"
+    nombre_citable: "Decreto 2153 de 1992"
+    tipo: "decreto"
+    numero: "2153"
+    anio: "1992"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%202153%20de%201992"
+    url: ""
+    items_del_banco: 10
+    areas: ["mercados"]
+    canonico: ["decreto", "2153", "1992"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citada en 10 ítem(s) del banco según el seed. En legal_basis de muestra (ids 960)."
+  - doc_id: "ley_1581_2012"
+    nombre_citable: "Ley 1581 de 2012"
+    tipo: "ley"
+    numero: "1581"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201581%20de%202012"
+    url: ""
+    items_del_banco: 6
+    areas: ["administrativo", "constitucional", "mercados"]
+    canonico: ["ley", "1581", "2012"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 6 ítem(s) del banco según el seed. En legal_basis de muestra (ids 679)."
+  - doc_id: "ley_1340_2009"
+    nombre_citable: "Ley 1340 de 2009"
+    tipo: "ley"
+    numero: "1340"
+    anio: "2009"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201340%20de%202009"
+    url: ""
+    items_del_banco: 3
+    areas: ["mercados"]
+    canonico: ["ley", "1340", "2009"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed. En legal_basis de muestra (ids 472)."
+  - doc_id: "ley_256_1996"
+    nombre_citable: "Ley 256 de 1996"
+    tipo: "ley"
+    numero: "256"
+    anio: "1996"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20256%20de%201996"
+    url: ""
+    items_del_banco: 2
+    areas: ["mercados"]
+    canonico: ["ley", "256", "1996"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_748_2011"
+    nombre_citable: "Sentencia C-748 de 2011"
+    tipo: "sentencia"
+    numero: "C-748"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-748%20de%202011"
+    url: ""
+    items_del_banco: 2
+    areas: ["civil", "mercados"]
+    canonico: ["jurisprudencia", "C-748", "2011"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "decreto_4886_2011"
+    nombre_citable: "Decreto 4886 de 2011"
+    tipo: "decreto"
+    numero: "4886"
+    anio: "2011"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%204886%20de%202011"
+    url: ""
+    items_del_banco: 1
+    areas: ["mercados"]
+    canonico: ["decreto", "4886", "2011"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_116_2006"
+    nombre_citable: "Ley 116 de 2006"
+    tipo: "ley"
+    numero: "116"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20116%20de%202006"
+    url: ""
+    items_del_banco: 1
+    areas: ["mercados"]
+    canonico: ["ley", "116", "2006"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. Probable error por la Ley 1116 de 2006 (ya en el seed)."
+  - doc_id: "ley_155_1959"
+    nombre_citable: "Ley 155 de 1959"
+    tipo: "ley"
+    numero: "155"
+    anio: "1959"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20155%20de%201959"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=38169"
+    items_del_banco: 1
+    areas: ["mercados"]
+    canonico: ["ley", "155", "1959"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_2157_2021"
+    nombre_citable: "Ley 2157 de 2021"
+    tipo: "ley"
+    numero: "2157"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202157%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["mercados"]
+    canonico: ["ley", "2157", "2021"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_640_2001"
+    nombre_citable: "Ley 640 de 2001"
+    tipo: "ley"
+    numero: "640"
+    anio: "2001"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20640%20de%202001"
+    url: ""
+    items_del_banco: 1
+    areas: ["mercados"]
+    canonico: ["ley", "640", "2001"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_80_2025"
+    nombre_citable: "Sentencia C-80 de 2025"
+    tipo: "sentencia"
+    numero: "C-80"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-80%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["mercados"]
+    canonico: ["jurisprudencia", "C-80", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "decision_351_1993"
+    nombre_citable: "Decisión Andina 351 de 1993"
+    tipo: "decision_andina"
+    numero: "351"
+    anio: "1993"
+    organo_emisor: "Comisión de la Comunidad Andina"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Decision%20andina%20351"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Norma base de derecho de autor; el seed solo trae la Decisión 486 (propiedad industrial)."
+  - doc_id: "ley_1266_2008"
+    nombre_citable: "Ley 1266 de 2008"
+    tipo: "ley"
+    numero: "1266"
+    anio: "2008"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1266_2008.html"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["ley", "1266", "2008"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Base de datos personales financieros; la Ley 2157 de 2021 del seed la modifica."
+  - doc_id: "ley_23_1982"
+    nombre_citable: "Ley 23 de 1982"
+    tipo: "ley"
+    numero: "23"
+    anio: "1982"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0023_1982.html"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=3431"
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["ley", "23", "1982"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Norma base nacional de derecho de autor."
+  - doc_id: "decreto_1074_2015"
+    nombre_citable: "Decreto 1074 de 2015"
+    tipo: "decreto"
+    numero: "1074"
+    anio: "2015"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201074%20de%202015"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76608"
+    items_del_banco: null
+    areas: ["comercial", "mercados"]
+    canonico: ["decreto", "1074", "2015"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reglamentos de sociedades, registro mercantil y consumidor."
+  - doc_id: "decreto_1377_2013"
+    nombre_citable: "Decreto 1377 de 2013"
+    tipo: "decreto"
+    numero: "1377"
+    anio: "2013"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201377%20de%202013"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646"
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["decreto", "1377", "2013"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Datos personales; hoy compilado en el Decreto 1074 de 2015."
+  - doc_id: "ley_1328_2009"
+    nombre_citable: "Ley 1328 de 2009"
+    tipo: "ley"
+    numero: "1328"
+    anio: "2009"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1328_2009.html"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial", "mercados"]
+    canonico: ["ley", "1328", "2009"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Relaciones con entidades financieras; también mercados."
+  - doc_id: "sentencia_c_1011_2008"
+    nombre_citable: "Sentencia C-1011 de 2008"
+    tipo: "sentencia"
+    numero: "C-1011"
+    anio: "2008"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-1011%20de%202008"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["jurisprudencia", "C-1011", "2008"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa la C-748 de 2011 (en el seed)."
+  - doc_id: "sentencia_c_1141_2000"
+    nombre_citable: "Sentencia C-1141 de 2000"
+    tipo: "sentencia"
+    numero: "C-1141"
+    anio: "2000"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-1141%20de%202000"
+    url: "https://www.corteconstitucional.gov.co/relatoria/2000/c-1141-00.htm"
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["jurisprudencia", "C-1141", "2000"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Protección al consumidor."
+    nota_verificacion: "Confirmada por el equipo: responsabilidad del productor y derechos del consumidor."
+  - doc_id: "decision_345_1993"
+    nombre_citable: "Decisión Andina 345 de 1993"
+    tipo: "decision_andina"
+    numero: "345"
+    anio: "1993"
+    organo_emisor: "Comisión de la Comunidad Andina"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Decision%20andina%20345"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Propiedad intelectual, cobertura marginal."
+  - doc_id: "decisiones_sic_por_verificar"
+    nombre_citable: "Decisiones de la SIC en competencia, consumidor y datos personales"
+    tipo: "decision_administrativa"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "SIC"
+    donde_buscar: "https://www.sic.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "excluido"
+    justificacion: "Sentido del fallo en actuaciones de la SIC; seleccionar casos con los compañeros de derecho."
+    motivo_exclusion: "Decisiones administrativas masivas: sin cita extraíble por el extractor oficial."
+  - doc_id: "ley_1915_2018"
+    nombre_citable: "Ley 1915 de 2018"
+    tipo: "ley"
+    numero: "1915"
+    anio: "2018"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1915_2018.html"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["ley", "1915", "2018"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Derecho de autor; vigencia temporal."
+  - doc_id: "ley_44_1993"
+    nombre_citable: "Ley 44 de 1993"
+    tipo: "ley"
+    numero: "44"
+    anio: "1993"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0044_1993.html"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["ley", "44", "1993"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Derecho de autor."
+  - doc_id: "ley_964_2005"
+    nombre_citable: "Ley 964 de 2005"
+    tipo: "ley"
+    numero: "964"
+    anio: "2005"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0964_2005.html"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados", "comercial"]
+    canonico: ["ley", "964", "2005"]
+    origen: "auditoria_2026-09-30"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ley marco del mercado de valores. El banco la cita como 'Ley 964 de 2006' (errata: ver ley_964_2006)."
+  - doc_id: "ley_2300_2023"
+    nombre_citable: "Ley 2300 de 2023"
+    tipo: "ley"
+    numero: "2300"
+    anio: "2023"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2300_2023.html"
+    url: ""
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["ley", "2300", "2023"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Protección de la intimidad de los consumidores: canales, horarios y periodicidad de contacto (\"dejen de fregar\")."
+  - doc_id: "circular_externa_029_2014"
+    nombre_citable: "Circular Externa 029 de 2014"
+    tipo: "circular"
+    numero: "029"
+    anio: "2014"
+    organo_emisor: "Superintendencia Financiera de Colombia"
+    alias_citables: ["Circular Básica Jurídica de la Superintendencia Financiera"]
+    fuente: "Superintendencia Financiera de Colombia"
+    donde_buscar: "https://www.superfinanciera.gov.co/publicaciones/10083443/normativanormativa-generalcircular-basica-juridica-ce-10083443/"
+    url: "https://www.superfinanciera.gov.co/publicaciones/10083443/normativanormativa-generalcircular-basica-juridica-ce-10083443/"
+    items_del_banco: null
+    areas: ["mercados", "comercial"]
+    canonico: ["circular", "029", "2014"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Circular Básica Jurídica (versión vigente del zip de la SFC): protección al consumidor financiero (SAC, defensor del consumidor), canales, gobierno corporativo. Complementa la Ley 1328 de 2009. Prueba completa: medir si desplaza normas."
+    parser: "sfc_cbj"
+  - doc_id: "decreto_4302_2008"
+    nombre_citable: "Decreto 4302 de 2008"
+    tipo: "decreto"
+    numero: "4302"
+    anio: "2008"
+    organo_emisor: "Ministerio de Comercio, Industria y Turismo"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1544491"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/DECRETO-4302-2008.md"
+    items_del_banco: null
+    areas: ["mercados"]
+    canonico: ["decreto", "4302", "2008"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Procedimiento para declarar razones de interés público (licencias obligatorias, art. 65 de la Decisión 486). Nombrado en el conjunto de evaluación (1 pregunta); texto consolidado de SUIN vía legalize-co."

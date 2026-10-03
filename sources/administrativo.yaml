@@ -1,0 +1,757 @@
+# Derecho administrativo
+# Banco completo: 124 ítems (53 cerradas, 63 semiabiertas, 8 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: administrativo
+documentos:
+  - doc_id: "ley_80_1993"
+    nombre_citable: "Ley 80 de 1993"
+    tipo: "ley"
+    numero: "80"
+    anio: "1993"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%2080%20de%201993"
+    url: ""
+    items_del_banco: 12
+    areas: ["administrativo", "laboral"]
+    canonico: ["ley", "80", "1993"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citada en 12 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_207_2019"
+    nombre_citable: "Sentencia C-207 de 2019"
+    tipo: "sentencia"
+    numero: "C-207"
+    anio: "2019"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-207%20de%202019"
+    url: ""
+    items_del_banco: 4
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "C-207", "2019"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 4 ítem(s) del banco según el seed."
+  - doc_id: "ley_1150_2007"
+    nombre_citable: "Ley 1150 de 2007"
+    tipo: "ley"
+    numero: "1150"
+    anio: "2007"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201150%20de%202007"
+    url: ""
+    items_del_banco: 3
+    areas: ["administrativo"]
+    canonico: ["ley", "1150", "2007"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed. En legal_basis de muestra (ids 290)."
+  - doc_id: "sentencia_t_760_2008"
+    nombre_citable: "Sentencia T-760 de 2008"
+    tipo: "sentencia"
+    numero: "T-760"
+    anio: "2008"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20T-760%20de%202008"
+    url: ""
+    items_del_banco: 3
+    areas: ["administrativo", "constitucional"]
+    canonico: ["jurisprudencia", "T-760", "2008"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 3 ítem(s) del banco según el seed."
+  - doc_id: "codigo_disciplinario"
+    nombre_citable: "Código General Disciplinario"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Codigo%20disciplinario"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["codigo_disciplinario", null, null]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Complementa el Código Disciplinario del seed."
+  - doc_id: "decreto_1082_2015"
+    nombre_citable: "Decreto 1082 de 2015"
+    tipo: "decreto"
+    numero: "1082"
+    anio: "2015"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201082%20de%202015"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77653"
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["decreto", "1082", "2015"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1150_2005"
+    nombre_citable: "Ley 1150 de 2005"
+    tipo: "ley"
+    numero: "1150"
+    anio: "2005"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201150%20de%202005"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["ley", "1150", "2005"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. Probable error por la Ley 1150 de 2007 (ya en el seed)."
+  - doc_id: "ley_1151_2007"
+    nombre_citable: "Ley 1151 de 2007"
+    tipo: "ley"
+    numero: "1151"
+    anio: "2007"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201151%20de%202007"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["ley", "1151", "2007"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1755_2015"
+    nombre_citable: "Ley 1755 de 2015"
+    tipo: "ley"
+    numero: "1755"
+    anio: "2015"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201755%20de%202015"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["ley", "1755", "2015"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_2160_2021"
+    nombre_citable: "Ley 2160 de 2021"
+    tipo: "ley"
+    numero: "2160"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%202160%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["ley", "2160", "2021"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_11_2020"
+    nombre_citable: "Sentencia SU-11 de 2020"
+    tipo: "sentencia"
+    numero: "SU-11"
+    anio: "2020"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-11%20de%202020"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "SU-11", "2020"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_240_2015"
+    nombre_citable: "Sentencia SU-240 de 2015"
+    tipo: "sentencia"
+    numero: "SU-240"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-240%20de%202015"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "SU-240", "2015"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_488_2011"
+    nombre_citable: "Sentencia SU-488 de 2011"
+    tipo: "sentencia"
+    numero: "SU-488"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-488%20de%202011"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "SU-488", "2011"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_566_2015"
+    nombre_citable: "Sentencia SU-566 de 2015"
+    tipo: "sentencia"
+    numero: "SU-566"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-566%20de%202015"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "SU-566", "2015"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_su_6_1991"
+    nombre_citable: "Sentencia SU-6 de 1991"
+    tipo: "sentencia"
+    numero: "SU-6"
+    anio: "1991"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-6%20de%201991"
+    url: ""
+    items_del_banco: 1
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "SU-6", "1991"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. La Corte Constitucional empezó a fallar en 1992: número o año por verificar."
+  - doc_id: "cpaca"
+    nombre_citable: "Código de Procedimiento Administrativo y de lo Contencioso Administrativo"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["cpaca", null, null]
+    origen: "citations.CODES"
+    prioridad: "media"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Vigencia temporal de las reformas al CPACA."
+  - doc_id: "ley_472_1998"
+    nombre_citable: "Ley 472 de 1998"
+    tipo: "ley"
+    numero: "472"
+    anio: "1998"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20472%20de%201998"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo", "constitucional"]
+    canonico: ["ley", "472", "1998"]
+    origen: "sample_50.legal_basis"
+    prioridad: "alta"
+    ola: 0
+    estado: "pendiente"
+    justificacion: "Citada en legal_basis de muestra (id 51). Acciones populares y derechos colectivos (art. 88 CP)."
+  - doc_id: "sentencia_su_277_2025"
+    nombre_citable: "Sentencia SU-277 de 2025"
+    tipo: "sentencia"
+    numero: "SU-277"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SU-277%20de%202025"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "SU-277", "2025"]
+    origen: "sample_50.legal_basis"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en legal_basis de muestra (id 563, como SU-277/25)."
+  - doc_id: "ley_489_1998"
+    nombre_citable: "Ley 489 de 1998"
+    tipo: "ley"
+    numero: "489"
+    anio: "1998"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0489_1998.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "489", "1998"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Estructura del Estado, descentralización y delegación; autoridad competente."
+  - doc_id: "ce_unificacion_seccion3_por_verificar"
+    nombre_citable: "Sentencias de unificación del Consejo de Estado, Sección Tercera"
+    tipo: "sentencia"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Relatoría del Consejo de Estado"
+    donde_buscar: "https://www.consejodeestado.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "por_verificar"
+    justificacion: "Reparación directa y títulos de imputación; identificar radicados con los compañeros de derecho."
+  - doc_id: "decreto_1083_2015"
+    nombre_citable: "Decreto 1083 de 2015"
+    tipo: "decreto"
+    numero: "1083"
+    anio: "2015"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201083%20de%202015"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62866"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["decreto", "1083", "2015"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reglamento de empleo público."
+  - doc_id: "ley_136_1994"
+    nombre_citable: "Ley 136 de 1994"
+    tipo: "ley"
+    numero: "136"
+    anio: "1994"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0136_1994.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "136", "1994"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Competencias municipales (muestra 218: arts. 311 y 313 CP)."
+  - doc_id: "ley_1474_2011"
+    nombre_citable: "Ley 1474 de 2011"
+    tipo: "ley"
+    numero: "1474"
+    anio: "2011"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1474_2011.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "1474", "2011"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Contratación, control y sanciones; también penal."
+  - doc_id: "ley_1882_2018"
+    nombre_citable: "Ley 1882 de 2018"
+    tipo: "ley"
+    numero: "1882"
+    anio: "2018"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1882_2018.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "1882", "2018"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa Ley 80 y Ley 1150 (en el seed)."
+  - doc_id: "ley_610_2000"
+    nombre_citable: "Ley 610 de 2000"
+    tipo: "ley"
+    numero: "610"
+    anio: "2000"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0610_2000.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "610", "2000"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Control fiscal; autoridad competente."
+  - doc_id: "ley_909_2004"
+    nombre_citable: "Ley 909 de 2004"
+    tipo: "ley"
+    numero: "909"
+    anio: "2004"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0909_2004.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "909", "2004"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Función pública; requisitos y clasificación de empleos."
+  - doc_id: "resolucion_368_2014"
+    nombre_citable: "Resolución 368 de 2014"
+    tipo: "resolucion"
+    numero: "368"
+    anio: "2014"
+    organo_emisor: "Ministerio de Ambiente y Desarrollo Sostenible"
+    alias_citables: ["Resolución 0368 de 2014"]
+    fuente: "Ministerio de Ambiente y Desarrollo Sostenible"
+    donde_buscar: "https://www.minambiente.gov.co/documento-normativa/resolucion-0368-de-2014/"
+    url: "https://www.minambiente.gov.co/documento-normativa/resolucion-0368-de-2014/"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["resolucion", "368", "2014"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "La pregunta de muestra 748 pide leerla antes de responder (23 preguntas del conjunto de evaluación también la nombran). PDF escaneado de MinAmbiente: texto por OCR abierto (src/ingest/ocr.py)."
+  - doc_id: "sentencia_c_634_2011"
+    nombre_citable: "Sentencia C-634 de 2011"
+    tipo: "sentencia"
+    numero: "C-634"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-634%20de%202011"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "C-634", "2011"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Art. 10 CPACA; precedente jurisprudencial."
+  - doc_id: "sentencia_c_816_2011"
+    nombre_citable: "Sentencia C-816 de 2011"
+    tipo: "sentencia"
+    numero: "C-816"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-816%20de%202011"
+    url: "https://www.corteconstitucional.gov.co/relatoria/2011/C-816-11.htm"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "C-816", "2011"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Art. 102 CPACA."
+    nota_verificacion: "Confirmada por el equipo: extensión de la jurisprudencia de unificación (CPACA)."
+  - doc_id: "sentencia_c_818_2011"
+    nombre_citable: "Sentencia C-818 de 2011"
+    tipo: "sentencia"
+    numero: "C-818"
+    anio: "2011"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-818%20de%202011"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "C-818", "2011"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Explica la Ley 1755 de 2015 (en el seed); vigencia temporal."
+  - doc_id: "sentencia_c_951_2014"
+    nombre_citable: "Sentencia C-951 de 2014"
+    tipo: "sentencia"
+    numero: "C-951"
+    anio: "2014"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-951%20de%202014"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["jurisprudencia", "C-951", "2014"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Hito sobre el derecho de petición."
+  - doc_id: "decreto_19_2012"
+    nombre_citable: "Decreto 19 de 2012"
+    tipo: "decreto"
+    numero: "19"
+    anio: "2012"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%2019%20de%202012"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["decreto", "19", "2012"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Simplificación de trámites."
+  - doc_id: "ley_1551_2012"
+    nombre_citable: "Ley 1551 de 2012"
+    tipo: "ley"
+    numero: "1551"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1551_2012.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "1551", "2012"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Modifica la Ley 136 de 1994."
+  - doc_id: "ley_2195_2022"
+    nombre_citable: "Ley 2195 de 2022"
+    tipo: "ley"
+    numero: "2195"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2195_2022.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "2195", "2022"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa el Estatuto Anticorrupción."
+  - doc_id: "ley_42_1993"
+    nombre_citable: "Ley 42 de 1993"
+    tipo: "ley"
+    numero: "42"
+    anio: "1993"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0042_1993.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "42", "1993"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Organización del control fiscal."
+  - doc_id: "ley_2080_2021"
+    nombre_citable: "Ley 2080 de 2021"
+    tipo: "ley"
+    numero: "2080"
+    anio: "2021"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2080_2021.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo", "procesal"]
+    canonico: ["ley", "2080", "2021"]
+    origen: "auditoria_2026-09-30"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reforma el CPACA (Ley 1437 de 2011): medios de control, cuantías y procedimiento. Administrativo es la segunda área del banco (124 ítems)."
+  - doc_id: "ley_142_1994"
+    nombre_citable: "Ley 142 de 1994"
+    tipo: "ley"
+    numero: "142"
+    anio: "1994"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994.html"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0142_1994.html"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "142", "1994"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Régimen de servicios públicos domiciliarios. El corpus la cita en 19 documentos y no la tenía."
+  - doc_id: "ley_2294_2023"
+    nombre_citable: "Ley 2294 de 2023"
+    tipo: "ley"
+    numero: "2294"
+    anio: "2023"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2294_2023.html"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2294_2023.html"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "2294", "2023"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Plan Nacional de Desarrollo 2022-2026. El corpus la cita en 23 documentos y no la tenía."
+  - doc_id: "ley_388_1997"
+    nombre_citable: "Ley 388 de 1997"
+    tipo: "ley"
+    numero: "388"
+    anio: "1997"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "388", "1997"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ordenamiento territorial (planes de ordenamiento, expropiación administrativa)."
+  - doc_id: "decreto_111_1996"
+    nombre_citable: "Decreto 111 de 1996"
+    tipo: "decreto"
+    numero: "111"
+    anio: "1996"
+    organo_emisor: "Presidencia de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html"
+    url: "http://www.secretariasenado.gov.co/senado/basedoc/decreto_0111_1996.html"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["decreto", "111", "1996"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Estatuto Orgánico del Presupuesto."
+  - doc_id: "ley_617_2000"
+    nombre_citable: "Ley 617 de 2000"
+    tipo: "ley"
+    numero: "617"
+    anio: "2000"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1664753"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-617-2000.md"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "617", "2000"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Categorización y saneamiento fiscal de entidades territoriales. No está en el corpus; texto consolidado de SUIN vía legalize-co (auditoría de cobertura 2026-10-01)."
+  - doc_id: "ley_1508_2012"
+    nombre_citable: "Ley 1508 de 2012"
+    tipo: "ley"
+    numero: "1508"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1682473"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-1508-2012.md"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "1508", "2012"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Asociaciones Público Privadas. No está en el corpus; texto consolidado de SUIN vía legalize-co (auditoría de cobertura 2026-10-01)."
+  - doc_id: "ley_152_1994"
+    nombre_citable: "Ley 152 de 1994"
+    tipo: "ley"
+    numero: "152"
+    anio: "1994"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1651907"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-152-1994.md"
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "152", "1994"]
+    origen: "auditoria_2026-10-01"
+    prioridad: "alta"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ley Orgánica del Plan de Desarrollo. No está en el corpus; texto consolidado de SUIN vía legalize-co (auditoría de cobertura 2026-10-01)."
+  - doc_id: "ley_99_1993"
+    nombre_citable: "Ley 99 de 1993"
+    tipo: "ley"
+    numero: "99"
+    anio: "1993"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0099_1993.html"
+    url: ""
+    items_del_banco: null
+    areas: ["administrativo"]
+    canonico: ["ley", "99", "1993"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Ley general ambiental (crea el Ministerio del Medio Ambiente y el SINA). Nombrada en el conjunto de evaluación (1 pregunta, en el bloque de la Resolución 368 de 2014) y ausente del corpus."

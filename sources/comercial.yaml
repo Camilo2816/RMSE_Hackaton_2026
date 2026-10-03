@@ -1,0 +1,467 @@
+# Derecho comercial y sociedades
+# Banco completo: 104 ítems (26 cerradas, 70 semiabiertas, 8 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: comercial
+documentos:
+  - doc_id: "ley_1116_2006"
+    nombre_citable: "Ley 1116 de 2006"
+    tipo: "ley"
+    numero: "1116"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201116%20de%202006"
+    url: ""
+    items_del_banco: 7
+    areas: ["comercial", "procesal"]
+    canonico: ["ley", "1116", "2006"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citada en 7 ítem(s) del banco según el seed. En legal_basis de muestra (ids 272)."
+  - doc_id: "ley_1258_2008"
+    nombre_citable: "Ley 1258 de 2008"
+    tipo: "ley"
+    numero: "1258"
+    anio: "2008"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201258%20de%202008"
+    url: ""
+    items_del_banco: 4
+    areas: ["comercial"]
+    canonico: ["ley", "1258", "2008"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 4 ítem(s) del banco según el seed."
+  - doc_id: "decreto_046_2024"
+    nombre_citable: "Decreto 046 de 2024"
+    tipo: "decreto"
+    numero: "046"
+    anio: "2024"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20046%20de%202024"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=228530"
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["decreto", "046", "2024"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "decreto_24_2016"
+    nombre_citable: "Decreto 24 de 2016"
+    tipo: "decreto"
+    numero: "24"
+    anio: "2016"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%2024%20de%202016"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=67536"
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["decreto", "24", "2016"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "decreto_4334_2008"
+    nombre_citable: "Decreto 4334 de 2008"
+    tipo: "decreto"
+    numero: "4334"
+    anio: "2008"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%204334%20de%202008"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["decreto", "4334", "2008"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "decreto_663_1993"
+    nombre_citable: "Decreto 663 de 1993"
+    tipo: "decreto"
+    numero: "663"
+    anio: "1993"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20663%20de%201993"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["decreto", "663", "1993"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 128)."
+  - doc_id: "ley_1700_2013"
+    nombre_citable: "Ley 1700 de 2013"
+    tipo: "ley"
+    numero: "1700"
+    anio: "2013"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%201700%20de%202013"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["ley", "1700", "2013"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_527_1999"
+    nombre_citable: "Ley 527 de 1999"
+    tipo: "ley"
+    numero: "527"
+    anio: "1999"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20527%20de%201999"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["ley", "527", "1999"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_820_2003"
+    nombre_citable: "Ley 820 de 2003"
+    tipo: "ley"
+    numero: "820"
+    anio: "2003"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20820%20de%202003"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["ley", "820", "2003"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_964_2006"
+    nombre_citable: "Ley 964 de 2006"
+    tipo: "ley"
+    numero: "964"
+    anio: "2006"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20964%20de%202006"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["ley", "964", "2006"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. La ley de mercado de valores es la Ley 964 de 2005: verificar el año."
+  - doc_id: "sentencia_c_145_2018"
+    nombre_citable: "Sentencia C-145 de 2018"
+    tipo: "sentencia"
+    numero: "C-145"
+    anio: "2018"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-145%20de%202018"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["jurisprudencia", "C-145", "2018"]
+    origen: "seed_targets"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. En legal_basis de muestra (ids 140)."
+  - doc_id: "sentencia_c_276_2025"
+    nombre_citable: "Sentencia C-276 de 2025"
+    tipo: "sentencia"
+    numero: "C-276"
+    anio: "2025"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-276%20de%202025"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["jurisprudencia", "C-276", "2025"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_c_486_1993"
+    nombre_citable: "Sentencia C-486 de 1993"
+    tipo: "sentencia"
+    numero: "C-486"
+    anio: "1993"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-486%20de%201993"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["jurisprudencia", "C-486", "1993"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "sentencia_sc_18392_2017"
+    nombre_citable: "Sentencia SC-18392 de 2017"
+    tipo: "sentencia"
+    numero: "SC-18392"
+    anio: "2017"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Civil"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SC-18392%20de%202017"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/2019/02/SC18392-2017-2011-00081-01-1-47.pdf"
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["jurisprudencia", "SC-18392", "2017"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_sc_3674_2021"
+    nombre_citable: "Sentencia SC-3674 de 2021"
+    tipo: "sentencia"
+    numero: "SC-3674"
+    anio: "2021"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Civil"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20SC-3674%20de%202021"
+    url: ""
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["jurisprudencia", "SC-3674", "2021"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_sc_425_2024"
+    nombre_citable: "Sentencia SC-425 de 2024"
+    tipo: "sentencia"
+    numero: "SC-425"
+    anio: "2024"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Civil"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://ecosistemadigitalindice.cortesuprema.gov.co/api/v1/link/share/6615b19b4051fbcca141847d"
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["jurisprudencia", "SC-425", "2024"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema."
+  - doc_id: "sentencia_sc_8453_2016"
+    nombre_citable: "Sentencia SC-8453 de 2016"
+    tipo: "sentencia"
+    numero: "SC-8453"
+    anio: "2016"
+    organo_emisor: "Corte Suprema de Justicia, Sala de Casación Civil"
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://consultaprovidencias.cortesuprema.gov.co/"
+    url: "https://cortesuprema.gov.co/corte/wp-content/uploads/2022/03/SC8453-2016-2014-02243-00-C.pdf"
+    items_del_banco: 1
+    areas: ["comercial"]
+    canonico: ["jurisprudencia", "SC-8453", "2016"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed. El seed apunta a la relatoría de la Corte Constitucional; buscarla en la de la Corte Suprema. El PDF de la URL trae una capa de texto dañada (OCR): el texto se toma de una copia digital equivalente entregada por el equipo."
+  - doc_id: "codigo_comercio"
+    nombre_citable: "Código de Comercio"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: ["codigo_comercio", null, null]
+    origen: "citations.CODES"
+    prioridad: "alta"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citado en legal_basis de muestra (id 239: arts. 1324, 1325, 822 y 871). Contratos mercantiles, sociedades, títulos valores."
+  - doc_id: "ley_222_1995"
+    nombre_citable: "Ley 222 de 1995"
+    tipo: "ley"
+    numero: "222"
+    anio: "1995"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0222_1995.html"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: ["ley", "222", "1995"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Reforma al Libro II del Código de Comercio; sociedades y responsabilidad de administradores."
+  - doc_id: "sentencia_csj_civil_cesantia_comercial_por_verificar"
+    nombre_citable: "Sentencia de la Sala Civil de la Corte Suprema sobre renuncia a la cesantía comercial del agente"
+    tipo: "sentencia"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Relatoría de la Corte Suprema de Justicia"
+    donde_buscar: "https://cortesuprema.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Muestra id 239 (la pregunta la describe pero no da número); identificar radicado."
+  - doc_id: "auto_supersociedades_2025_01_730337"
+    nombre_citable: "Auto 2025-01-730337 de la Superintendencia de Sociedades"
+    tipo: "auto"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Superintendencia de Sociedades (fuera de la lista de fuentes)"
+    donde_buscar: "https://www.supersociedades.gov.co"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: null
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "excluido"
+    justificacion: "Muestra id 272. La Superintendencia no está en la lista de fuentes permitidas: consultar a los organizadores antes de incluirla."
+    motivo_exclusion: "Auto de superintendencia: el extractor oficial no lo reconoce como cita."
+  - doc_id: "decreto_2555_2010"
+    nombre_citable: "Decreto 2555 de 2010"
+    tipo: "decreto"
+    numero: "2555"
+    anio: "2010"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%202555%20de%202010"
+    url: "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=40032"
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: ["decreto", "2555", "2010"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Mercado de valores; complementa la Ley 964 del seed."
+  - doc_id: "ley_1231_2008"
+    nombre_citable: "Ley 1231 de 2008"
+    tipo: "ley"
+    numero: "1231"
+    anio: "2008"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1231_2008.html"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: ["ley", "1231", "2008"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Títulos valores."
+  - doc_id: "ley_1429_2010"
+    nombre_citable: "Ley 1429 de 2010"
+    tipo: "ley"
+    numero: "1429"
+    anio: "2010"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1429_2010.html"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: ["ley", "1429", "2010"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Aspectos societarios y de registro."
+  - doc_id: "ley_2069_2020"
+    nombre_citable: "Ley 2069 de 2020"
+    tipo: "ley"
+    numero: "2069"
+    anio: "2020"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2069_2020.html"
+    url: ""
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: ["ley", "2069", "2020"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Sociedades BIC y régimen empresarial reciente."
+  - doc_id: "boletin_jurisprudencia_supersociedades_5_2016"
+    nombre_citable: "Boletín de Jurisprudencia n.º 5 de 2016 de la Superintendencia de Sociedades"
+    tipo: "boletin"
+    numero: "5"
+    anio: "2016"
+    organo_emisor: "Superintendencia de Sociedades, Delegatura de Procedimientos Mercantiles"
+    fuente: "Superintendencia de Sociedades"
+    donde_buscar: "https://www.supersociedades.gov.co/documents/guest/Prensa/Noticias/Historial%20de%20Noticias/2016/Bolet%C3%ADn%20n5%20%282016%29.pdf"
+    url: "https://www.supersociedades.gov.co/documents/guest/Prensa/Noticias/Historial%20de%20Noticias/2016/Bolet%C3%ADn%20n5%20%282016%29.pdf"
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: null
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Reseñas de las sentencias de la Delegatura de Procedimientos Mercantiles de 2016 (entre ellas la 800-46), que el conjunto de evaluación nombra (1 pregunta). Sin cuerpo canónico: el extractor oficial no reconoce providencias de la Superintendencia."
+  - doc_id: "ley_45_1990"
+    nombre_citable: "Ley 45 de 1990"
+    tipo: "ley"
+    numero: "45"
+    anio: "1990"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol (vía legalize-co)"
+    donde_buscar: "https://www.suin-juriscol.gov.co/viewDocument.asp?id=1600083"
+    url: "https://raw.githubusercontent.com/legalize-dev/legalize-co/c25da5b1a507dd681b6704334e284d2e60f8e6d3/co/LEY-45-1990.md"
+    items_del_banco: null
+    areas: ["comercial"]
+    canonico: ["ley", "45", "1990"]
+    origen: "huecos_test_2026-10-03"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Intermediación financiera; art. 72 sobre cobro de intereses por encima de los topes. Texto consolidado de SUIN vía legalize-co (el Senado no la publica). Nombrada en el conjunto de evaluación (1 pregunta) y ausente del corpus."

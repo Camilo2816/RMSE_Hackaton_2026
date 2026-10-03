@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta jurídica RAG</title>
+  <meta name="description" content="Asistente de consulta de derecho colombiano con recuperación de normas y citas verificadas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra">
+    <div class="barra__dentro">
+      <div class="marca">
+        <!-- Logotipo oficial (interfaz/assets/logo-software-colombia.png, ver README.md "Logotipo").
+             Si el archivo no está, se muestra el marcador "SC" con el nombre en texto. -->
+        <img class="marca__logo" src="assets/logo-software-colombia.png" alt="Software Colombia"
+             onerror="this.closest('.marca').classList.add('marca--sin-logo')">
+        <span class="marca__logo-marcador" aria-hidden="true">SC</span>
+        <span class="marca__texto">
+          <span class="marca__nombre"><span class="marca__software">Software</span> Colombia</span>
+          <span class="marca__sub">Patrocinador del hackathon</span>
+        </span>
+      </div>
+      <div class="barra__titulo">
+        <span class="barra__producto">Consulta jurídica</span>
+        <span id="salud" class="salud" role="status">Conectando…</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor">
+    <section class="intro">
+      <h1>Pregúntele al corpus de derecho colombiano</h1>
+      <p>Cada respuesta se construye con los 10 pasajes normativos recuperados. Las normas citadas se marcan como
+        <strong>respaldadas</strong> cuando aparecen en esos pasajes.</p>
+    </section>
+
+    <form id="formulario" class="tarjeta formulario" novalidate>
+      <div class="formulario__cabecera">
+        <h2>Nueva consulta</h2>
+        <div class="ejemplos">
+          <span class="ejemplos__etiqueta" id="ejemplos-etiqueta">Ejemplos:</span>
+          <div class="ejemplos__botones" role="group" aria-labelledby="ejemplos-etiqueta" id="ejemplos"></div>
+        </div>
+      </div>
+
+      <label class="campo" for="pregunta">
+        <span class="campo__etiqueta">Pregunta</span>
+        <textarea id="pregunta" name="pregunta" rows="4" required
+                  placeholder="Ej.: ¿Qué norma regula el acoso laboral en Colombia?"></textarea>
+      </label>
+
+      <fieldset class="campo formato">
+        <legend class="campo__etiqueta">Formato de respuesta</legend>
+        <div class="segmentado">
+          <label><input type="radio" name="formato" value="semi_open" checked><span>Semiabierta</span></label>
+          <label><input type="radio" name="formato" value="multiple_choice"><span>Selección múltiple</span></label>
+          <label><input type="radio" name="formato" value="open_ended"><span>Abierta (caso)</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset id="opciones" class="campo opciones" hidden>
+        <legend class="campo__etiqueta">Opciones</legend>
+        <div class="opciones__grilla">
+          <label class="opcion"><span class="opcion__letra">A</span><input name="op-A" type="text" aria-label="Opción A"></label>
+          <label class="opcion"><span class="opcion__letra">B</span><input name="op-B" type="text" aria-label="Opción B"></label>
+          <label class="opcion"><span class="opcion__letra">C</span><input name="op-C" type="text" aria-label="Opción C"></label>
+          <label class="opcion"><span class="opcion__letra">D</span><input name="op-D" type="text" aria-label="Opción D"></label>
+        </div>
+      </fieldset>
+
+      <p id="error" class="aviso aviso--error" role="alert" hidden></p>
+
+      <div class="formulario__acciones">
+        <button id="enviar" class="boton" type="submit">Consultar</button>
+        <span id="cargando" class="cargando" role="status" aria-live="polite" hidden>
+          <span class="cargando__punto" aria-hidden="true"></span>
+          <span id="cargando-texto">Consultando…</span>
+        </span>
+      </div>
+    </form>
+
+    <section id="resultado" class="resultado" hidden aria-labelledby="titulo-respuesta">
+      <article class="tarjeta respuesta">
+        <header class="respuesta__cabecera">
+          <h2 id="titulo-respuesta" tabindex="-1">Respuesta</h2>
+          <span id="latencia" class="pastilla"></span>
+        </header>
+        <div id="abstencion" class="aviso aviso--atencion" hidden>
+          El sistema se abstuvo: la evidencia recuperada no alcanza para responder con respaldo.
+        </div>
+        <div id="respuesta-cuerpo" class="respuesta__cuerpo"></div>
+        <section class="normas" aria-labelledby="titulo-normas">
+          <h3 id="titulo-normas">Normas citadas</h3>
+          <ul id="normas" class="chips"></ul>
+          <p class="nota">Una norma está <em>respaldada</em> cuando su cuerpo normativo aparece en los pasajes entregados.
+            Clic en una norma para ir al pasaje donde aparece.</p>
+        </section>
+      </article>
+
+      <div class="columnas">
+        <section class="tarjeta pasajes" aria-labelledby="titulo-pasajes">
+          <header class="seccion__cabecera">
+            <h2 id="titulo-pasajes">Pasajes recuperados</h2>
+            <div class="seccion__acciones">
+              <button type="button" class="boton boton--sutil" id="abrir-todos">Expandir todos</button>
+              <button type="button" class="boton boton--sutil" id="cerrar-todos">Plegar todos</button>
+            </div>
+          </header>
+          <ol id="pasajes" class="lista-pasajes"></ol>
+        </section>
+
+        <aside class="tarjeta traza" aria-labelledby="titulo-traza">
+          <h2 id="titulo-traza">Traza</h2>
+          <h3>Latencia por etapa</h3>
+          <dl id="tiempos" class="tiempos"></dl>
+          <h3>Subconsultas</h3>
+          <ol id="subconsultas" class="subconsultas"></ol>
+          <h3>Verificación</h3>
+          <p id="verificacion" class="verificacion"></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__dentro">
+      <span>Sistema RAG de derecho colombiano · Hackathon 2026</span>
+      <span>Identidad visual inspirada en <a href="https://software-colombia.com/" rel="noopener">software-colombia.com</a></span>
+    </div>
+  </footer>
+
+  <template id="tpl-pasaje">
+    <li class="pasaje">
+      <details>
+        <summary>
+          <span class="pasaje__rango"></span>
+          <span class="pasaje__titulo"></span>
+          <span class="pasaje__citado" hidden>Citado</span>
+          <span class="pasaje__score"><span class="pasaje__barra"><span></span></span><span class="pasaje__valor"></span></span>
+        </summary>
+        <p class="pasaje__meta"></p>
+        <div class="pasaje__texto"></div>
+      </details>
+    </li>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

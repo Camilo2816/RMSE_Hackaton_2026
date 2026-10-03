@@ -1,0 +1,115 @@
+# Tabla de alias de cuerpos normativos. Derivada de scripts/citations.py (CODES,
+# _ALIAS_NUM): las variantes son las que reconoce el evaluador. nombre_citable es
+# el prefijo que llevan los pasajes de ese cuerpo. La carga src/common/alias_normas.py.
+constitucion:
+  nombre_citable: Constitución Política de Colombia
+  equivale_a: null
+  variantes:
+  - constitucion politica
+  - constitucion nacional
+  - constitucion
+  - c.p.
+  - cp
+  - c.n.
+  - carta politica
+codigo_general_proceso:
+  nombre_citable: Código General del Proceso
+  equivale_a: ley 1564
+  variantes:
+  - codigo general del proceso
+  - ley 1564 de 2012
+  - cgp
+codigo_sustantivo_trabajo:
+  nombre_citable: Código Sustantivo del Trabajo
+  equivale_a: null
+  variantes:
+  - codigo sustantivo del trabajo
+  - c.s.t.
+  - cst
+estatuto_tributario:
+  nombre_citable: Estatuto Tributario
+  equivale_a: decreto 624
+  variantes:
+  - estatuto tributario
+  - decreto 624 de 1989
+  - e.t.
+  - et
+decision_andina_486:
+  nombre_citable: Decisión 486 de la Comisión de la Comunidad Andina
+  equivale_a: null
+  variantes:
+  - decision 486 de la comision de la comunidad andina
+  - decision andina 486
+  - decision 486
+estatuto_consumidor:
+  nombre_citable: Estatuto del Consumidor
+  equivale_a: ley 1480
+  variantes:
+  - estatuto del consumidor
+  - estatuto de proteccion al consumidor
+  - ley 1480 de 2011
+codigo_infancia:
+  nombre_citable: Código de la Infancia y la Adolescencia
+  equivale_a: ley 1098
+  variantes:
+  - codigo de la infancia y la adolescencia
+  - ley 1098 de 2006
+codigo_disciplinario:
+  nombre_citable: Código General Disciplinario
+  equivale_a: ley 1952
+  variantes:
+  - codigo general disciplinario
+  - codigo disciplinario unico
+  - ley 1952 de 2019
+codigo_nacional_policia:
+  nombre_citable: Código Nacional de Seguridad y Convivencia Ciudadana
+  equivale_a: ley 1801
+  variantes:
+  - codigo nacional de seguridad y convivencia ciudadana
+  - codigo nacional de policia
+  - ley 1801 de 2016
+codigo_civil:
+  nombre_citable: Código Civil
+  equivale_a: null
+  variantes:
+  - codigo civil
+  - c.c.
+  - cc
+  - c.c
+codigo_penal:
+  nombre_citable: Código Penal
+  equivale_a: ley 599
+  variantes:
+  - codigo penal
+  - ley 599 de 2000
+  - c.p.p
+  - codigo penal colombiano
+codigo_procedimiento_penal:
+  nombre_citable: Código de Procedimiento Penal
+  equivale_a: ley 906
+  variantes:
+  - codigo de procedimiento penal
+  - ley 906 de 2004
+  - cpp
+codigo_comercio:
+  nombre_citable: Código de Comercio
+  equivale_a: null
+  variantes:
+  - codigo de comercio
+  - codigo del comercio
+  - c.co.
+  - cco
+codigo_procesal_trabajo:
+  nombre_citable: Código Procesal del Trabajo y de la Seguridad Social
+  equivale_a: null
+  variantes:
+  - codigo procesal del trabajo
+  - cpts
+  - cpt
+cpaca:
+  nombre_citable: Código de Procedimiento Administrativo y de lo Contencioso Administrativo
+  equivale_a: ley 1437
+  variantes:
+  - codigo de procedimiento administrativo y de lo contencioso administrativo
+  - ley 1437 de 2011
+  - cpaca

@@ -1,0 +1,211 @@
+# Derecho procesal
+# Banco completo: 111 ítems (37 cerradas, 71 semiabiertas, 3 abiertas).
+# Precargado desde data/seed_targets.json (no exhaustivo): ampliar con lo que pidan
+# los legal_basis de data/sample_50.jsonl y las sub-tareas del banco.
+# `url` = enlace directo al documento, se completa al descargar (reconstruibilidad).
+area: procesal
+documentos:
+  - doc_id: "decreto_1563_2012"
+    nombre_citable: "Decreto 1563 de 2012"
+    tipo: "decreto"
+    numero: "1563"
+    anio: "2012"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%201563%20de%202012"
+    url: ""
+    items_del_banco: 2
+    areas: ["procesal"]
+    canonico: ["decreto", "1563", "2012"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "por_verificar"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed. El Estatuto de Arbitraje es la Ley 1563 de 2012: buscar como ley (ver Procesal)."
+  - doc_id: "sentencia_c_259_2015"
+    nombre_citable: "Sentencia C-259 de 2015"
+    tipo: "sentencia"
+    numero: "C-259"
+    anio: "2015"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-259%20de%202015"
+    url: ""
+    items_del_banco: 2
+    areas: ["administrativo", "procesal"]
+    canonico: ["jurisprudencia", "C-259", "2015"]
+    origen: "seed_targets"
+    prioridad: "media"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 2 ítem(s) del banco según el seed."
+  - doc_id: "codigo_nacional_policia"
+    nombre_citable: "Código Nacional de Seguridad y Convivencia Ciudadana"
+    tipo: "codigo"
+    numero: null
+    anio: null
+    organo_emisor: null
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/?q=Codigo%20nacional%20policia"
+    url: ""
+    items_del_banco: 1
+    areas: ["procesal"]
+    canonico: ["codigo_nacional_policia", null, null]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 1
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_678_2001"
+    nombre_citable: "Ley 678 de 2001"
+    tipo: "ley"
+    numero: "678"
+    anio: "2001"
+    organo_emisor: "Congreso de la República"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Ley%20678%20de%202001"
+    url: ""
+    items_del_banco: 1
+    areas: ["procesal"]
+    canonico: ["ley", "678", "2001"]
+    origen: "seed_targets"
+    prioridad: "baja"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Citada en 1 ítem(s) del banco según el seed."
+  - doc_id: "ley_1563_2012"
+    nombre_citable: "Ley 1563 de 2012"
+    tipo: "ley"
+    numero: "1563"
+    anio: "2012"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1563_2012.html"
+    url: ""
+    items_del_banco: null
+    areas: ["procesal"]
+    canonico: ["ley", "1563", "2012"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "El seed la lista como 'Decreto 1563 de 2012' (2 ítems); buscarla como ley."
+  - doc_id: "ley_270_1996"
+    nombre_citable: "Ley 270 de 1996"
+    tipo: "ley"
+    numero: "270"
+    anio: "1996"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_0270_1996.html"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional", "procesal"]
+    canonico: ["ley", "270", "1996"]
+    origen: "inventario_xlsx"
+    prioridad: "alta"
+    ola: 2
+    estado: "pendiente"
+    justificacion: "Estructura de la Rama Judicial, jerarquía y competencias; sub-tareas autoridad competente y juez que decide."
+  - doc_id: "ley_2213_2022"
+    nombre_citable: "Ley 2213 de 2022"
+    tipo: "ley"
+    numero: "2213"
+    anio: "2022"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_2213_2022.html"
+    url: ""
+    items_del_banco: null
+    areas: ["procesal"]
+    canonico: ["ley", "2213", "2022"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Notificaciones y audiencias virtuales; vigencia temporal."
+  - doc_id: "sentencia_c_420_2020"
+    nombre_citable: "Sentencia C-420 de 2020"
+    tipo: "sentencia"
+    numero: "C-420"
+    anio: "2020"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-420%20de%202020"
+    url: ""
+    items_del_banco: null
+    areas: ["procesal"]
+    canonico: ["jurisprudencia", "C-420", "2020"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Notificaciones y virtualidad."
+  - doc_id: "sentencia_c_543_1992"
+    nombre_citable: "Sentencia C-543 de 1992"
+    tipo: "sentencia"
+    numero: "C-543"
+    anio: "1992"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-543%20de%201992"
+    url: ""
+    items_del_banco: null
+    areas: ["procesal"]
+    canonico: ["jurisprudencia", "C-543", "1992"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Evolución de la tutela contra sentencias."
+  - doc_id: "sentencia_c_590_2005"
+    nombre_citable: "Sentencia C-590 de 2005"
+    tipo: "sentencia"
+    numero: "C-590"
+    anio: "2005"
+    organo_emisor: "Corte Constitucional"
+    fuente: "Relatoría de la Corte Constitucional"
+    donde_buscar: "https://www.corteconstitucional.gov.co/relatoria/?q=Sentencia%20C-590%20de%202005"
+    url: ""
+    items_del_banco: null
+    areas: ["constitucional", "procesal"]
+    canonico: ["jurisprudencia", "C-590", "2005"]
+    origen: "inventario_xlsx"
+    prioridad: "media"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Hito: requisitos generales y especiales de la tutela contra sentencias; sub-tareas juez que decide y precedente."
+  - doc_id: "decreto_806_2020"
+    nombre_citable: "Decreto 806 de 2020"
+    tipo: "decreto"
+    numero: "806"
+    anio: "2020"
+    organo_emisor: "Gobierno Nacional"
+    fuente: "SUIN-Juriscol"
+    donde_buscar: "https://www.suin-juriscol.gov.co/legislacion/?q=Decreto%20806%20de%202020"
+    url: ""
+    items_del_banco: null
+    areas: ["procesal"]
+    canonico: ["decreto", "806", "2020"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Antecedente de la Ley 2213 de 2022."
+  - doc_id: "ley_1285_2009"
+    nombre_citable: "Ley 1285 de 2009"
+    tipo: "ley"
+    numero: "1285"
+    anio: "2009"
+    organo_emisor: "Congreso de la República"
+    fuente: "Secretaría del Senado"
+    donde_buscar: "http://www.secretariasenado.gov.co/senado/basedoc/ley_1285_2009.html"
+    url: ""
+    items_del_banco: null
+    areas: ["procesal"]
+    canonico: ["ley", "1285", "2009"]
+    origen: "inventario_xlsx"
+    prioridad: "baja"
+    ola: 3
+    estado: "pendiente"
+    justificacion: "Complementa la Ley 270 de 1996."

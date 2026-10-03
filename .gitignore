@@ -1,0 +1,31 @@
+# Secretos
+scripts/.env
+.env
+
+# Preguntas con respuesta fuera del kit oficial (no van en la entrega)
+data_50.jsonl
+
+# Preguntas del test (las entrega el jurado el sábado; run.sh test las lee de data/)
+test_992.jsonl
+data/test_992.jsonl
+
+# Artefactos pesados (se publican en Zenodo, no en git).
+# Se versiona solo la estructura de corpus/: README y .gitkeep de cada subcarpeta.
+corpus/*
+!corpus/README.md
+!corpus/*/
+corpus/*/*
+!corpus/*/.gitkeep
+*.faiss
+*.npy
+*.gguf
+*.safetensors
+
+# Reportes del evaluador
+eval/runs/*/
+
+# Python
+__pycache__/
+.venv/
+.venv-eval/
+.ipynb_checkpoints/
