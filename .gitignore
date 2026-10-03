@@ -29,3 +29,7 @@ __pycache__/
 .venv/
 .venv-eval/
 .ipynb_checkpoints/
+
+# Corridas de la entrega: evidencia citada en README y CORPUS.md (las demás quedan fuera)
+!eval/runs/2026-10-03_sample_final2/
+!eval/runs/2026-10-03_test_992_final/

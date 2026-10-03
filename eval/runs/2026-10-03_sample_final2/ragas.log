@@ -1,0 +1,63 @@
+C:\Users\turing\Documents\hackathon-2026-v2\scripts\evaluate.py:297: DeprecationWarning: Importing answer_correctness from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import answer_correctness
+  from ragas.metrics import answer_correctness
+C:\Users\turing\Documents\hackathon-2026-v2\scripts\evaluate.py:321: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; llm = llm_factory('gpt-4o-mini', client=OpenAI(api_key='...'))
+  llm = LangchainLLMWrapper(ChatOpenAI(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   5%|▌         | 20/391 [00:00<00:01, 191.65it/s]Loading weights:  11%|█         | 43/391 [00:00<00:01, 203.09it/s]Loading weights:  17%|█▋        | 66/391 [00:00<00:01, 207.75it/s]Loading weights:  22%|██▏       | 87/391 [00:00<00:02, 144.37it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 627.98it/s]
+C:\Users\turing\Documents\hackathon-2026-v2\scripts\evaluate.py:325: DeprecationWarning: LangchainEmbeddingsWrapper is deprecated and will be removed in a future version. Use the modern embedding providers instead: embedding_factory('openai', model='text-embedding-3-small', client=openai_client) or from ragas.embeddings import OpenAIEmbeddings, GoogleEmbeddings, HuggingFaceEmbeddings
+  emb = LangchainEmbeddingsWrapper(HuggingFaceEmbeddings(model_name=JUEZ_ENCODER))
+Evaluating:   0%|          | 0/35 [00:00<?, ?it/s]Evaluating:   3%|▎         | 1/35 [00:33<19:13, 33.93s/it]Evaluating:   9%|▊         | 3/35 [00:40<05:56, 11.15s/it]Evaluating:  14%|█▍        | 5/35 [00:50<04:01,  8.04s/it]Evaluating:  17%|█▋        | 6/35 [00:51<02:56,  6.10s/it]Evaluating:  23%|██▎       | 8/35 [01:00<02:26,  5.44s/it]Evaluating:  26%|██▌       | 9/35 [01:03<02:04,  4.77s/it]Evaluating:  34%|███▍      | 12/35 [01:10<01:22,  3.61s/it]Evaluating:  40%|████      | 14/35 [01:16<01:12,  3.45s/it]Evaluating:  43%|████▎     | 15/35 [01:22<01:19,  3.98s/it]Evaluating:  46%|████▌     | 16/35 [01:35<01:51,  5.88s/it]Evaluating:  51%|█████▏    | 18/35 [01:44<01:31,  5.36s/it]Evaluating:  57%|█████▋    | 20/35 [01:53<01:13,  4.90s/it]Evaluating:  60%|██████    | 21/35 [01:54<00:59,  4.26s/it]Evaluating:  63%|██████▎   | 22/35 [02:02<01:04,  4.94s/it]Evaluating:  66%|██████▌   | 23/35 [02:03<00:50,  4.17s/it]Evaluating:  69%|██████▊   | 24/35 [02:06<00:41,  3.79s/it]Evaluating:  74%|███████▍  | 26/35 [02:15<00:36,  4.05s/it]Evaluating:  77%|███████▋  | 27/35 [02:16<00:26,  3.30s/it]Evaluating:  80%|████████  | 28/35 [02:19<00:23,  3.37s/it]Evaluating:  83%|████████▎ | 29/35 [02:24<00:22,  3.70s/it]Evaluating:  86%|████████▌ | 30/35 [02:26<00:15,  3.18s/it]Evaluating:  91%|█████████▏| 32/35 [02:28<00:07,  2.41s/it]Evaluating:  94%|█████████▍| 33/35 [02:32<00:05,  2.76s/it]Evaluating:  97%|█████████▋| 34/35 [02:42<00:04,  4.61s/it]Evaluating: 100%|██████████| 35/35 [02:48<00:00,  4.79s/it]Evaluating: 100%|██████████| 35/35 [02:48<00:00,  4.80s/it]
+{
+  "equipo": "submission",
+  "split": "sample",
+  "validacion": {
+    "errores": 0,
+    "detalle": []
+  },
+  "cerradas": {
+    "n": 15,
+    "aciertos": 12,
+    "accuracy": 0.8,
+    "referencia": 0.905,
+    "puntos": 16.0
+  },
+  "citas": {
+    "items_evaluados": 41,
+    "n_ref": 49,
+    "n_citadas": 310,
+    "aciertos": 45,
+    "aciertos_respaldados": 45,
+    "aciertos_sin_respaldo": 0,
+    "incorrectas": 265,
+    "citas_sin_respaldo": 0,
+    "recall_citas_ponderado": 0.9184,
+    "tasa_sin_respaldo": 0.0,
+    "indice": 0.9184,
+    "puntos": 18.37
+  },
+  "abstencion": {
+    "items_evaluados": 43,
+    "abstuvo_bien": 0,
+    "abstuvo_de_mas": 0,
+    "respondio_bien": 40,
+    "respondio_mal": 3,
+    "calibracion": 0.9302,
+    "puntos": 9.3
+  },
+  "correccion_ragas": {
+    "n_juzgados": 35,
+    "n_respondidos": 35,
+    "n_fallidos": 0,
+    "correctness": 0.5021,
+    "modelo_juez": "z-ai/glm-5.3-flash",
+    "encoder": "intfloat/multilingual-e5-large",
+    "referencia": 0.451,
+    "puntos": 15.06
+  },
+  "total_automatico": {
+    "obtenidos": 58.73,
+    "posibles": 80.0,
+    "de_100_del_ranking": 80.0,
+    "nota": "los 20 pts restantes son interfaz grafica, bitacora de corpus, video y reproducibilidad"
+  }
+}

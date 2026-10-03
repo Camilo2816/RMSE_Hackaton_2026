@@ -1,0 +1,132 @@
+seed: 42
+retrieval:
+  encoder: BAAI/bge-m3
+  max_seq_length: 1024
+  bm25:
+    stemmer: spanish
+    method: lucene
+    k1: 1.5
+    b: 0.75
+  hybrid: rrf
+  rrf_k: 60
+  top_k_per_query: 50
+  denso_relatoria_secciones: []
+  bm25_relatoria: false
+  relatoria_inventario: sources/relatoria_cc.yaml
+  solo_lookup:
+  - resolucion_368_2014
+  - compilacion_csj_contratos_civiles_comerciales_3
+rerank:
+  enabled: true
+  model: BAAI/bge-reranker-v2-m3
+  candidates: 40
+  max_length: 512
+  batch_size: 8
+  top_n: 10
+  fusionar_con_hibrido: false
+fusion:
+  method: rrf
+  max_passages: 10
+  max_por_documento: null
+  factor_vigencia:
+    derogado: 0.85
+    inexequible: 0.85
+lookup:
+  enabled: true
+  max_hits: 4
+  partes_por_articulo: 2
+  por_norma: 2
+  bm25_solo_pregunta: false
+cuotas:
+  enabled: true
+  sentencia: 3
+  sentencia_si_pregunta: 6
+  voto: 0
+  voto_si_pregunta: 2
+  reglamentaria: 2
+  reglamentaria_si_pregunta: 5
+  min_primarias: 0
+  reglamentarias:
+  - decreto_2555_2010
+  - decreto_1625_2016
+  - decreto_780_2016
+  - decreto_1074_2015
+  - decreto_1072_2015
+  - decreto_1082_2015
+  - decreto_1083_2015
+  - decreto_1833_2016
+jurisprudencia:
+  enabled: false
+  candidatos: 10
+  bm25_k: 300
+  nucleo: 10
+compresion:
+  enabled: false
+  presupuesto: 0.4
+  min_caracteres: 600
+  lambda: 0.8
+valores:
+  enabled: true
+  max: 2
+  reglas:
+  - nombre: smlmv
+    patron: salarios? minimos?|\bs\.?m\.?m?\.?l\.?m\.?v\b|\bcuantia|\$ ?\d|\b\d{1,3}(?:\.\d{3}){2,}\b|\b\d+
+      ?millones\b|\bcop\b
+    pasajes:
+    - doc_id: decreto_159_2026
+      articulo: '1'
+  - nombre: uvt
+    patron: \buvt\b|unidad(?:es)? de valor tributario
+    pasajes:
+    - doc_id: resolucion_238_2025
+      articulo: '1'
+  - nombre: auxilio_transporte
+    patron: (?:auxilio|subsidio) de transporte
+    pasajes:
+    - doc_id: decreto_1470_2025
+      articulo: '1'
+generation:
+  model: meta-llama/Llama-3.1-8B-Instruct
+  quantization: q4_k_m
+  temperature: 0
+  thinking: false
+  guided_json: true
+  estructura: null
+  num_ctx: 16384
+  num_predict:
+    multiple_choice: 450
+    semi_open: 400
+    open_ended: 900
+    planner: 400
+  reintento_factor_num_predict: 1.5
+  repeat_penalty: null
+  reset_cache: true
+  timeout_s: 30
+  timeout_carga_s: 600
+  keep_alive: 30m
+verification:
+  drop_unsupported: true
+  extension:
+    enabled: false
+    min_palabras_oracion: 5
+    max_palabras_oracion: 60
+  referencia_desde_pasajes:
+    semi_open:
+      fuentes: 10
+      menciones: 4
+    multiple_choice:
+      fuentes: 10
+      menciones: 4
+    open_ended:
+      fuentes: 0
+      menciones: 0
+  max_iter: 1
+  replan_min_rerank_score: 0.75
+abstention:
+  closed: never
+  free_text_min_rerank_score: null
+pipeline: agentic
+planner:
+  type: subqueries
+  n: 3
+  incluir_pregunta: true

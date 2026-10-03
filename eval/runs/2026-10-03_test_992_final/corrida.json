@@ -1,0 +1,9 @@
+{
+  "config": "configs/agentic.yaml",
+  "split": "test",
+  "ids": null,
+  "inicio": "2026-10-03T12:30:01",
+  "commit": "29598b6",
+  "terminada": true,
+  "fin": "2026-10-03T13:28:55"
+}
