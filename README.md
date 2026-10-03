@@ -118,14 +118,17 @@ Face la primera vez que corre el sistema.
 **3. Decoder**
 
 ```bash
-ollama pull llama3.1:8b              # Ollama sirviendo en http://localhost:11434
+ollama serve &                       # si Ollama no corre ya como servicio (la app de Windows lo arranca sola)
+ollama pull llama3.1:8b              # debe responder en http://localhost:11434
 ```
 
-**4. Corpus e índice.** Descargar `corpus_RMSE.zip` del enlace de la sección *Corpus e índice*
+**4. Corpus e índice.** Descargar `corpus_RMSE.zip` (5,6 GB; el enlace de la sección *Corpus e
+índice*, o directo por consola con `confirm=t`, que salta el aviso de Drive para archivos grandes)
 y restaurarlo (deja `corpus/processed/` y `corpus/index/` y verifica la huella del índice):
 
 ```bash
-python tools/restaurar_corpus.py ruta/a/corpus_RMSE.zip
+curl -L -o corpus_RMSE.zip "https://drive.usercontent.google.com/download?id=1yXC8VouANIeYCUJ93qOZdo8HxmjmX3II&export=download&confirm=t"
+python tools/restaurar_corpus.py corpus_RMSE.zip
 ```
 
 Para reconstruirlo desde las URL declaradas en lugar de descargarlo: `CORPUS.md`, sección 3
@@ -163,8 +166,9 @@ Tiempo estimado sobre las 50 preguntas de muestra: ~3 minutos (3,5 s por pregunt
 
 ## Resultados sobre las preguntas de muestra
 
-Configuración de entrega (`configs/agentic.yaml`) con el índice congelado, evaluador
-oficial (`eval/runs/2026-10-03_sample_final2/`):
+Evaluador oficial sobre las 50 preguntas de muestra; son las cifras del informe técnico
+(`informe/INFORME_TECNICO.pdf`), medidas el 02-10 con la extensión mínima activa (registro en
+`eval/runs/README.md`):
 
 | Componente | Puntos | Posibles |
 |---|---:|---:|
@@ -172,13 +176,16 @@ oficial (`eval/runs/2026-10-03_sample_final2/`):
 | Calidad de citación (recall 0,918; 0 citas sin respaldo) | 18,37 | 20 |
 | Abstención calibrada | 9,30 | 10 |
 | **Total automático sin RAGAS** | **43,67** | **50** |
-| Corrección RAGAS (media de dos juicios: 0,507) | 15,20 | 30 |
-| **Total automático con RAGAS** | **58,87** | **80** |
+| Corrección RAGAS (media de dos juicios: 0,461) | 13,82 | 30 |
+| **Total automático con RAGAS** | **57,49** | **80** |
 
-Extensión: el jurado aclaró que solo rige el máximo de palabras (150 en semiabiertas, 500
-en abiertas; lo que pase se corta). El código acota las semiabiertas a 5 oraciones y 150
-palabras; la extensión mínima con texto literal quedó apagada (costaba ~1,1 puntos de RAGAS).
-La evolución completa está en `CORPUS.md` (sección 4) y en `eval/runs/README.md`.
+El informe se redactó antes de un último cambio: el jurado aclaró que solo rige el máximo de
+palabras (150 en semiabiertas, 500 en abiertas; lo que pase se corta), así que la extensión
+mínima con texto literal quedó apagada y el código solo acota las semiabiertas a 5 oraciones y
+150 palabras. Con esa configuración, que es la de la entrega, y el corpus final
+(`eval/runs/2026-10-03_sample_final2/`), el componente determinista es el mismo (43,67) y RAGAS
+sube a 15,20 (media de dos juicios: 0,507): 58,87/80 en total. La evolución completa está en
+`CORPUS.md` (sección 4) y en `eval/runs/README.md`.
 
 La entrega del test es `submissions.jsonl` (raíz), copia de la corrida
 `eval/runs/2026-10-03_test_992_final/`; sus trazas se conservan para la verificación en vivo.
